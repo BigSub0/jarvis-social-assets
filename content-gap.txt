@@ -1,0 +1,2 @@
+# Optional: paste high-search topics from TikTok Creator Search Insights > Content Gap here, one per line.
+# The daily task uses a matching line word-for-word as the post title. Lines starting with # are ignored.
