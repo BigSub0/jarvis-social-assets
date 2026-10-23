@@ -1,0 +1,105 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Anton;src:url(../../node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:BC;font-weight:600;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2)}
+@font-face{font-family:BC;font-weight:800;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-800-normal.woff2)}
+@font-face{font-family:BC;font-weight:900;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-900-normal.woff2)}
+:root{--bg:#06122a;--panel:#0c1d3f;--line:#c9a227;--gold:#f5c542;--txt:#e9eef8;--mute:#9fb0cf;--mil:#092c5c;--milg:#8fbce6;--lad:#12284b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:var(--bg);color:var(--txt);font-family:BC,sans-serif;overflow:hidden}
+.top{height:10px;background:linear-gradient(90deg,#8fbce6 0 50%,#ffc52f 50% 100%)}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:26px 50px;background:#0a1836;border-bottom:2px solid #1d3466}
+.logo{font-family:Anton;font-size:58px;letter-spacing:1px;font-style:italic}
+.logo span{color:var(--gold)}
+.desk{font-weight:800;font-size:22px;letter-spacing:3px;color:var(--gold);text-align:right;line-height:1.15}
+.hero{text-align:center;padding:30px 40px 24px}
+.kick{font-weight:800;color:var(--gold);letter-spacing:5px;font-size:26px}
+h1{font-family:Anton;font-size:104px;line-height:1;margin:12px 0 10px;letter-spacing:1px}
+.sub{font-weight:800;font-size:34px;letter-spacing:3px}
+.alert{display:inline-block;margin-top:20px;border:2px solid var(--gold);padding:10px 26px;font-weight:800;font-size:26px;letter-spacing:2px}
+.alert b{color:var(--gold)}
+.box{margin:0 50px;border:2px solid var(--line);background:var(--panel)}
+.boxhead{display:flex;justify-content:space-between;padding:16px 22px;font-weight:800;letter-spacing:2px;font-size:22px;color:var(--gold);border-bottom:1px solid #26407a}
+.boxhead span{color:var(--txt)}
+.duo{display:grid;grid-template-columns:1fr 1fr}
+.side{position:relative;padding:24px 26px 22px;min-height:290px;overflow:hidden}
+.side.mil{background:linear-gradient(160deg,var(--mil),#0a1a33)}
+.side.lad{background:linear-gradient(200deg,var(--lad),#04254a);border-left:2px solid var(--line)}
+.side .ghost{position:absolute;right:-10px;top:-20px;font-family:Anton;font-size:260px;opacity:.09;line-height:1}
+.tag{font-weight:800;letter-spacing:3px;font-size:22px;color:var(--gold)}
+.name{font-family:Anton;font-size:64px;line-height:.95;margin:10px 0 16px}
+.stat{font-weight:900;font-size:34px;color:var(--gold)}
+.small{font-weight:600;font-size:23px;color:var(--txt);margin-top:8px;line-height:1.25}
+.nugget{margin:20px 50px 0;border:2px solid var(--line);background:linear-gradient(90deg,#11285a,#0c1d3f);padding:20px 28px;display:flex;gap:28px;align-items:center}
+.num{font-family:Anton;font-size:130px;line-height:.9;color:var(--gold)}
+.ntag{font-weight:800;color:var(--gold);letter-spacing:3px;font-size:22px}
+.nname{font-family:Anton;font-size:60px;line-height:1;margin:6px 0 10px}
+.ntxt{font-weight:600;font-size:25px;line-height:1.3}
+.sect{margin:20px 50px 12px;display:flex;align-items:center;gap:16px;font-weight:800;font-size:28px;letter-spacing:2px}
+.sect:after{content:"";flex:1;height:2px;background:#2a4686}
+.grid{margin:0 50px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.note{background:var(--panel);border:1px solid #2a4686;padding:16px 20px;min-height:150px}
+.note .t{font-weight:800;font-size:19px;letter-spacing:3px;color:var(--gold)}
+.note .h{font-family:Anton;font-size:36px;line-height:1.02;margin:8px 0 10px}
+.note .d{font-weight:600;font-size:22px;line-height:1.3;color:var(--txt)}
+.way{margin:16px 50px 0;border-left:6px solid var(--gold);background:#0c1d3f;padding:16px 22px;font-weight:600;font-size:21px;line-height:1.35}
+.way b{color:var(--gold);letter-spacing:2px}
+.foot{position:absolute;bottom:0;left:0;right:0;background:#040c1e;border-top:3px solid var(--line);text-align:center;padding:26px 0 22px}
+.url{font-family:Anton;font-size:56px;letter-spacing:2px}
+.cta{font-weight:900;color:var(--gold);font-size:34px;letter-spacing:2px;margin-top:4px}
+.fine{font-weight:600;font-size:17px;color:var(--mute);margin-top:8px}
+</style></head><body>
+<div class="top"></div>
+<div class="bar"><div class="logo">JARVIS SPORTS <span>AI</span></div><div class="desk">PLAYER<br>INTELLIGENCE DESK</div></div>
+
+<div class="hero">
+  <div class="kick">WORLD SERIES GAME 1 · PLAYER PERFORMANCE WATCH</div>
+  <h1>FALL CLASSIC BEGINS</h1>
+  <div class="sub">RAYS AT BREWERS · SERIES TIED 0–0</div>
+  <div class="alert"><b>FIRST PITCH:</b> 8:00 PM ET · FOX · AMERICAN FAMILY FIELD</div>
+</div>
+
+<div class="box">
+  <div class="boxhead">GAME 1 PITCHING REPORT <span>2026 REGULAR SEASON</span></div>
+  <div class="duo">
+    <div class="side mil"><div class="ghost">TB</div>
+      <div class="tag">TAMPA BAY · RHP</div>
+      <div class="name">NICK<br>MARTINEZ</div>
+      <div class="stat">3.10 ERA · 180 IP</div>
+      <div class="small">31 starts · 2.38 ERA on the road<br>Rays 24–9 in his starts (incl. playoffs)</div>
+    </div>
+    <div class="side lad" style="background:linear-gradient(200deg,#12284b,#0a1730)"><div class="ghost">MIL</div>
+      <div class="tag">MILWAUKEE · RHP</div>
+      <div class="name">JACOB<br>MISIOROWSKI</div>
+      <div class="stat">1.80 ERA · 252 K</div>
+      <div class="small">MLB leader in ERA, K &amp; WHIP (0.80)<br>Opponents hit just .157</div>
+    </div>
+  </div>
+</div>
+
+<div class="nugget">
+  <div class="num" style="white-space:nowrap;font-size:112px">16/16</div>
+  <div>
+    <div class="ntag">📊 FROM THE JARVIS SAFE SHEET</div>
+    <div class="nname">MIZ: 5+ K AT HOME</div>
+    <div class="ntxt">Misiorowski struck out 5+ in all 16 of his 2026 regular-season home starts (avg 9.1 K).</div>
+  </div>
+</div>
+
+<div class="sect">MORE PLAYER PERFORMANCE NOTES</div>
+<div class="grid">
+  <div class="note"><div class="t">HOT BAT · TB</div><div class="h">YANDY: 1.061 OPS</div><div class="d">Yandy Díaz hit .333 with 2 HR in the ALCS. 6 extra-base hits this postseason.</div></div>
+  <div class="note"><div class="t">NLCS MVP · MIL</div><div class="h">BAUERS: 6 RBI</div><div class="d">Jake Bauers drove in 6 as Milwaukee swept the Dodgers 4–0.</div></div>
+  <div class="note"><div class="t">HEAT CHECK · MIL</div><div class="h">104.8 MPH</div><div class="d">Miz's first NLDS pitch: fastest postseason pitch tracked since 2008.</div></div>
+  <div class="note"><div class="t">LATE LOCKDOWN · TB</div><div class="h">92–0</div><div class="d">Rays are 92–0 this year (incl. playoffs) when leading after 8 innings.</div></div>
+</div>
+
+<div class="way"><b>THE JARVIS WAY:</b> Useful player context — recent form, streaks, matchups and history. These are verified game-watch facts, not predictions or guarantees. The full Safe Sheet is for members.</div>
+
+<div class="foot">
+  <div class="url">JARVISSPORTSAI.COM</div>
+  <div class="cta">SUBSCRIBE NOW — GET 1 MONTH FREE TRIAL</div>
+  <div class="fine">All content and information provided by Jarvis Sports AI is for entertainment purposes only.</div>
+</div>
+</body></html>
