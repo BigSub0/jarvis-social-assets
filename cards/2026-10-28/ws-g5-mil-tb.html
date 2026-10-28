@@ -1,0 +1,94 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Anton;src:url(../../node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:BC;font-weight:600;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2)}
+@font-face{font-family:BC;font-weight:800;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-800-normal.woff2)}
+@font-face{font-family:BC;font-weight:900;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-900-normal.woff2)}
+:root{--bg:#06122a;--panel:#0c1d3f;--line:#c9a227;--gold:#f5c542;--txt:#e9eef8;--mute:#9fb0cf;--mil:#12284b;--milg:#ffc52f;--lad:#005a9c}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:var(--bg);color:var(--txt);font-family:BC,sans-serif;overflow:hidden}
+.top{height:10px;background:linear-gradient(90deg,#ffc52f 0 50%,#8fbce6 50% 100%)}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:26px 50px;background:#0a1836;border-bottom:2px solid #1d3466}
+.logo{font-family:Anton;font-size:58px;letter-spacing:1px;font-style:italic}
+.logo span{color:var(--gold)}
+.desk{font-weight:800;font-size:22px;letter-spacing:3px;color:var(--gold);text-align:right;line-height:1.15}
+.hero{text-align:center;padding:30px 40px 24px}
+.kick{font-weight:800;color:var(--gold);letter-spacing:5px;font-size:26px}
+h1{font-family:Anton;font-size:104px;line-height:1;margin:12px 0 10px;letter-spacing:1px}
+.sub{font-weight:800;font-size:34px;letter-spacing:3px}
+.alert{display:inline-block;margin-top:20px;border:2px solid var(--gold);padding:10px 26px;font-weight:800;font-size:26px;letter-spacing:2px}
+.alert b{color:var(--gold)}
+.box{margin:0 50px;border:2px solid var(--line);background:var(--panel)}
+.boxhead{display:flex;justify-content:space-between;padding:16px 22px;font-weight:800;letter-spacing:2px;font-size:22px;color:var(--gold);border-bottom:1px solid #26407a}
+.boxhead span{color:var(--txt)}
+.duo{display:grid;grid-template-columns:1fr 1fr}
+.side{position:relative;padding:24px 26px 22px;min-height:290px;overflow:hidden}
+.side.mil{background:linear-gradient(160deg,var(--mil),#0a1a33)}
+.side.lad{background:linear-gradient(200deg,var(--lad),#04254a);border-left:2px solid var(--line)}
+.side .ghost{position:absolute;right:-10px;top:-20px;font-family:Anton;font-size:260px;opacity:.09;line-height:1}
+.tag{font-weight:800;letter-spacing:3px;font-size:22px;color:var(--gold)}
+.name{font-family:Anton;font-size:64px;line-height:.95;margin:10px 0 16px}
+.stat{font-weight:900;font-size:34px;color:var(--gold)}
+.small{font-weight:600;font-size:23px;color:var(--txt);margin-top:8px;line-height:1.25}
+.nugget{margin:20px 50px 0;border:2px solid var(--line);background:linear-gradient(90deg,#11285a,#0c1d3f);padding:20px 28px;display:flex;gap:28px;align-items:center}
+.num{font-family:Anton;font-size:130px;line-height:.9;color:var(--gold)}
+.ntag{font-weight:800;color:var(--gold);letter-spacing:3px;font-size:22px}
+.nname{font-family:Anton;font-size:60px;line-height:1;margin:6px 0 10px}
+.ntxt{font-weight:600;font-size:25px;line-height:1.3}
+.sect{margin:20px 50px 12px;display:flex;align-items:center;gap:16px;font-weight:800;font-size:28px;letter-spacing:2px}
+.sect:after{content:"";flex:1;height:2px;background:#2a4686}
+.grid{margin:0 50px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.note{background:var(--panel);border:1px solid #2a4686;padding:16px 20px;min-height:150px}
+.note .t{font-weight:800;font-size:19px;letter-spacing:3px;color:var(--gold)}
+.note .h{font-family:Anton;font-size:36px;line-height:1.02;margin:8px 0 10px}
+.note .d{font-weight:600;font-size:22px;line-height:1.3;color:var(--txt)}
+.way{margin:16px 50px 0;border-left:6px solid var(--gold);background:#0c1d3f;padding:16px 22px;font-weight:600;font-size:21px;line-height:1.35}
+.way b{color:var(--gold);letter-spacing:2px}
+.foot{position:absolute;bottom:0;left:0;right:0;background:#040c1e;border-top:3px solid var(--line);text-align:center;padding:26px 0 22px}
+.url{font-family:Anton;font-size:56px;letter-spacing:2px}
+.cta{font-weight:900;color:var(--gold);font-size:34px;letter-spacing:2px;margin-top:4px}
+.fine{font-weight:600;font-size:17px;color:var(--mute);margin-top:8px}
+</style></head><body>
+<div class="top"></div>
+<div class="bar"><div class="logo">JARVIS SPORTS <span>AI</span></div><div class="desk">PLAYER<br>INTELLIGENCE DESK</div></div>
+
+<div class="hero">
+  <div class="kick">WORLD SERIES GAME 5 · PLAYER PERFORMANCE WATCH</div>
+  <h1 style="font-size:100px">RAYS STILL BREATHING</h1>
+  <div class="sub">BREWERS (LEAD 3–1) AT RAYS</div>
+  <div class="alert"><b>FIRST PITCH:</b> 8:00 PM ET · FOX · TROPICANA FIELD</div>
+</div>
+<div class="box">
+  <div class="boxhead">STARTING PITCHER REPORT <span>2026 SEASON</span></div>
+  <div class="duo">
+    <div class="side mil" style="background:linear-gradient(160deg,#12284b,#3d3000)"><div class="ghost">MIL</div>
+      <div class="tag">BREWERS · RHP</div><div class="name">JACOB<br>MISIOROWSKI</div><div class="stat">1.80 ERA · 252 K</div><div class="small">Led MLB in ERA, K, WHIP (0.80)<br>Postseason: 1-0, 2.70 ERA<br>WS G1: 1 R in 5 IP</div>
+    </div>
+    <div class="side lad" style="background:linear-gradient(200deg,#092c5c,#2a5a86)"><div class="ghost">TB</div>
+      <div class="tag">RAYS · STARTER</div><div class="name">TBA</div><div class="stat">BULLPEN GAME?</div><div class="small">Not yet announced<br>No fully rested starter<br>Final home game of 2026</div>
+    </div>
+  </div>
+</div>
+<div class="nugget">
+  <div class="num" style="white-space:nowrap;font-size:120px">4/4</div>
+  <div>
+    <div class="ntag">📊 FROM THE JARVIS SAFE SHEET</div>
+    <div class="nname">CHOURIO: 2+ HITS</div>
+    <div class="ntxt">Jackson Chourio has 2+ hits in 4 of 4 World Series games. His 10 hits tie Babe Ruth (1928) for the most through 4 WS games.</div>
+  </div>
+</div>
+<div class="sect">MORE PLAYER PERFORMANCE NOTES</div>
+<div class="grid">
+  <div class="note"><div class="t">ROOKIE FIRST · MIL</div><div class="h">PRATT: 4 HITS</div><div class="d">Cooper Pratt hit the first rookie extra-inning HR in WS history in Game 4.</div></div>
+  <div class="note"><div class="t">STREAK · MIL</div><div class="h">18 SCORELESS</div><div class="d">Aaron Ashby's straight scoreless postseason innings — most ever by a reliever in one postseason.</div></div>
+  <div class="note"><div class="t">WALK-OFF · TB</div><div class="h">12TH-INNING WIN</div><div class="d">Ben Williamson's pinch-hit walk-off kept Tampa alive, 4–3. Jonny DeLuca tied it in the 12th.</div></div>
+  <div class="note"><div class="t">HISTORY · SERIES</div><div class="h">0 OF 4</div><div class="d">Teams that forced WS Game 5 from 0–3 and then forced a Game 6. The Rays are No. 5.</div></div>
+</div>
+<div class="way"><b>THE JARVIS WAY:</b> Useful player context — recent form, streaks, matchups and history. These are verified game-watch facts, not predictions or guarantees. The full Safe Sheet is for members.</div>
+<div class="foot">
+  <div class="url">JARVISSPORTSAI.COM</div>
+  <div class="cta">SUBSCRIBE NOW — GET 1 MONTH FREE TRIAL</div>
+  <div class="fine">All content and information provided by Jarvis Sports AI is for entertainment purposes only.</div>
+</div>
+</body></html>
