@@ -13,7 +13,14 @@ body{width:1080px;height:1920px;background:var(--bg);color:var(--txt);font-famil
 .logo{font-family:Anton;font-size:58px;letter-spacing:1px;font-style:italic}
 .logo span{color:var(--gold)}
 .desk{font-weight:800;font-size:22px;letter-spacing:3px;color:var(--gold);text-align:right;line-height:1.15}
-.hero{text-align:center;padding:30px 40px 24px}
+.hero{position:relative;text-align:center;padding:30px 40px 24px;overflow:hidden}
+.hero.has-photo{padding:56px 40px 44px;border-bottom:2px solid var(--line);margin-bottom:18px}
+.hero .photo{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.hero .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,18,42,.50) 0%,rgba(6,18,42,.78) 60%,rgba(6,18,42,.96) 100%)}
+.hero>*:not(.photo){position:relative;z-index:1}
+.hero h1,.hero .sub{text-shadow:0 4px 18px rgba(0,0,0,.85)}
+.hero .alert{background:rgba(6,18,42,.75)}
+.hero .credit{position:absolute;right:14px;bottom:6px;font-weight:600;font-size:14px;color:#d5dcea;opacity:.85;letter-spacing:.5px}
 .kick{font-weight:800;color:var(--gold);letter-spacing:5px;font-size:26px}
 h1{font-family:Anton;font-size:104px;line-height:1;margin:12px 0 10px;letter-spacing:1px}
 .sub{font-weight:800;font-size:34px;letter-spacing:3px}
@@ -53,6 +60,11 @@ h1{font-family:Anton;font-size:104px;line-height:1;margin:12px 0 10px;letter-spa
 <div class="top"></div>
 <div class="bar"><div class="logo">JARVIS SPORTS <span>AI</span></div><div class="desk">PLAYER<br>INTELLIGENCE DESK</div></div>
 
+<!-- VENUE PHOTO (optional, real CC-licensed venue photo only — never players/logos):
+     change the next line to <div class="hero has-photo"> and uncomment the two lines below.
+<div class="photo" style="background-image:url(../../assets/venues/VENUE-SLUG.jpg)"></div>
+<div class="credit">Photo: AUTHOR · LICENSE · Wikimedia Commons</div>
+-->
 <div class="hero">
   <div class="kick">NLCS GAME 4 · PLAYER PERFORMANCE WATCH</div>
   <h1>ONE WIN FROM HISTORY</h1>
