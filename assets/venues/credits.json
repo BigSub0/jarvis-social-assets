@@ -4,5 +4,17 @@
     "license": "CC BY-SA 2.0",
     "source": "https://commons.wikimedia.org/wiki/File:FedExField_2020.jpg",
     "modified": "cropped, blurred, color-graded"
+  },
+  "lumen-field": {
+    "author": "Seaman Sarah Wilson, U.S. Coast Guard",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Port_Angeles-based_Coast_Guardsmen_fly_over_Seattle_Seahawks_game_151228-G-LS785-003.jpg",
+    "modified": "cropped, blurred, color-graded"
+  },
+  "madison-square-garden": {
+    "author": "Emmanuel Milou",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Madison_Square_Garden_sold-out_(4905954113).jpg",
+    "modified": "cropped, blurred, color-graded"
   }
 }
