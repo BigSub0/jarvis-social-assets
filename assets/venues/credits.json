@@ -16,5 +16,17 @@
     "license": "CC BY-SA 2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Madison_Square_Garden_sold-out_(4905954113).jpg",
     "modified": "cropped, blurred, color-graded"
+  },
+  "little-caesars-arena": {
+    "author": "Coreyfein01",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Interior_of_little_Caesars_arena_panorama.jpg",
+    "modified": "cropped, blurred, color-graded"
+  },
+  "frost-bank-center": {
+    "author": "Katie Haugland",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2014_NBA_Playoffs_Dallas_Mavericks_vs._San_Antonio_Spurs.jpg",
+    "modified": "cropped, blurred, color-graded"
   }
 }
