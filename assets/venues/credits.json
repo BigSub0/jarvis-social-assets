@@ -28,5 +28,17 @@
     "license": "CC BY 2.0",
     "source": "https://commons.wikimedia.org/wiki/File:2014_NBA_Playoffs_Dallas_Mavericks_vs._San_Antonio_Spurs.jpg",
     "modified": "cropped, blurred, color-graded"
+  },
+  "rocket-arena": {
+    "author": "Erik Drost",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Quicken_Loans_Arena_3.jpg",
+    "modified": "cropped, blurred, color-graded"
+  },
+  "crypto-com-arena": {
+    "author": "Troutfarm27",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Crypto.com_Arena_interior_2024.jpg",
+    "modified": "cropped, blurred, color-graded"
   }
 }

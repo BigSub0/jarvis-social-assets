@@ -1,0 +1,220 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!--
+  JARVIS card v2 — cinematic stadium layout.
+  Edit ONLY the CONFIG object below (and the text in the HTML). Sport: "football" | "baseball" | "basketball" | "hockey".
+  Optional real venue photo: set CONFIG.venuePhoto to a relative path in assets/venues (freely licensed only) + CONFIG.photoCredit.
+-->
+<style>
+@font-face{font-family:Anton;src:url(../../node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:BC;font-weight:600;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2)}
+@font-face{font-family:BC;font-weight:800;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-800-normal.woff2)}
+@font-face{font-family:BC;font-weight:900;src:url(../../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-900-normal.woff2)}
+:root{--a:#004C54;--a2:#A5ACAF;--b:#7a1a1a;--b2:#FFB612;--gold:#ffcc33;--gold2:#ff9a1f;--txt:#f3f6ff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:#02050d;color:var(--txt);font-family:BC,sans-serif;position:relative}
+#bg,#photo{position:absolute;inset:0;width:1080px;height:1920px}
+#photo{height:1150px;object-fit:cover;object-position:center 55%;display:none;filter:saturate(1.15) contrast(1.08) brightness(.82);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%)}
+.grade{position:absolute;inset:0;height:1150px;display:none;background:linear-gradient(90deg,var(--a) 0%,transparent 45%,transparent 55%,var(--b) 100%);opacity:.35;mix-blend-mode:color}
+.shade{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(2,5,13,.55) 0%,rgba(2,5,13,.05) 18%,rgba(2,5,13,.10) 34%,rgba(2,5,13,.78) 46%,rgba(2,5,13,.93) 70%,#02050d 100%)}
+.wrap{position:absolute;inset:0;padding:0 44px}
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:40px}
+.logo{font-family:Anton;font-size:54px;font-style:italic;letter-spacing:1px;text-shadow:0 4px 18px rgba(0,0,0,.7)}
+.logo span{padding-right:14px;background:linear-gradient(180deg,#fff2a8,var(--gold) 45%,var(--gold2));-webkit-background-clip:text;color:transparent}
+.desk{font-weight:900;font-size:20px;letter-spacing:4px;padding:10px 16px;border:2px solid rgba(255,204,51,.8);color:var(--gold);background:rgba(0,0,0,.45);transform:skewX(-10deg)}
+.hero{margin-top:96px;text-align:center}
+.live{display:inline-flex;align-items:center;gap:12px;background:#e11d2e;padding:10px 26px;font-weight:900;font-size:28px;letter-spacing:4px;transform:skewX(-12deg);box-shadow:0 0 40px rgba(225,29,46,.7)}
+.live i{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff}
+h1{font-family:Anton;font-size:166px;line-height:.9;margin-top:22px;letter-spacing:2px;text-transform:uppercase;
+  background:linear-gradient(180deg,#ffffff 0%,#fff6c9 38%,var(--gold) 62%,var(--gold2) 100%);-webkit-background-clip:text;color:transparent;
+  filter:drop-shadow(0 6px 0 rgba(0,0,0,.85)) drop-shadow(0 0 38px rgba(255,180,40,.55))}
+.match{margin-top:18px;font-weight:900;font-size:40px;letter-spacing:3px;text-shadow:0 3px 12px #000}
+.pills{margin-top:18px;display:flex;justify-content:center;gap:12px}
+.pills span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);padding:9px 20px;font-weight:800;font-size:26px;letter-spacing:2px;border-radius:40px}
+.pills b{color:var(--gold)}
+.vs{position:relative;margin-top:34px;height:350px;display:flex;gap:0}
+.p{position:relative;flex:1;overflow:hidden;padding:26px 30px}
+.p.l{background:linear-gradient(135deg,var(--a) 0%,rgba(0,0,0,.6) 100%);clip-path:polygon(0 0,100% 0,88% 100%,0 100%);border-left:6px solid var(--a2)}
+.p.r{background:linear-gradient(225deg,var(--b) 0%,rgba(0,0,0,.6) 100%);clip-path:polygon(12% 0,100% 0,100% 100%,0 100%);text-align:right;border-right:6px solid var(--b2);margin-left:-60px}
+.ghost{position:absolute;font-family:Anton;font-size:300px;line-height:1;opacity:.13;top:-20px}
+.p.l .ghost{right:40px}.p.r .ghost{left:40px}
+.tag{font-weight:900;font-size:22px;letter-spacing:4px;opacity:.9}
+.nm{font-family:Anton;font-size:72px;line-height:.92;margin:10px 0 14px;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.big{display:inline-block;font-weight:900;font-size:36px;color:#111;background:linear-gradient(180deg,#fff2a8,var(--gold));padding:4px 14px;transform:skewX(-10deg)}
+.sm{font-weight:600;font-size:23px;margin-top:10px;line-height:1.25;opacity:.95}
+.vsb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:132px;height:132px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#3a3a3a,#000 70%);border:5px solid var(--gold);display:grid;place-items:center;
+  font-family:Anton;font-size:62px;color:var(--gold);box-shadow:0 0 50px rgba(255,190,40,.8),inset 0 0 20px rgba(255,200,60,.4);z-index:3}
+.nug{margin-top:22px;display:flex;align-items:center;gap:28px;padding:20px 28px;border-radius:18px;
+  background:linear-gradient(100deg,rgba(255,204,51,.22),rgba(255,154,31,.06) 60%,rgba(0,0,0,.2));border:2px solid rgba(255,204,51,.75);box-shadow:0 0 60px rgba(255,180,40,.25)}
+.ring{position:relative;width:170px;height:170px;flex:none}
+.ring svg{position:absolute;inset:0}
+.ring .n{position:absolute;inset:0;display:grid;place-items:center;font-family:Anton;font-size:76px;color:var(--gold);text-shadow:0 0 24px rgba(255,190,40,.7)}
+.nt{font-weight:900;font-size:22px;letter-spacing:4px;color:var(--gold)}
+.nh{font-family:Anton;font-size:62px;line-height:1;margin:6px 0 10px}
+.nx{font-weight:600;font-size:26px;line-height:1.3}
+.grid{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.c{position:relative;padding:16px 20px 14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);overflow:hidden}
+.c:before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:var(--acc,var(--gold))}
+.c .t{font-weight:900;font-size:19px;letter-spacing:3px;color:var(--acc2,var(--gold))}
+.c .h{font-family:Anton;font-size:38px;line-height:1;margin:8px 0}
+.c .d{font-weight:600;font-size:22px;line-height:1.3;opacity:.92}
+.c .e{position:absolute;right:14px;top:12px;font-size:34px}
+.way{display:none;margin-top:18px;font-weight:600;font-size:19px;line-height:1.35;opacity:.75;text-align:center}
+.foot{position:absolute;left:0;right:0;bottom:0;padding:18px 44px 20px;text-align:center;background:linear-gradient(180deg,rgba(2,5,13,0),#02050d 30%)}
+.cta{display:flex;align-items:center;justify-content:center;gap:16px;height:96px;border-radius:60px;
+  background:linear-gradient(180deg,#fff3a6,var(--gold) 45%,var(--gold2));color:#140c00;font-family:Anton;font-size:50px;letter-spacing:1px;
+  box-shadow:0 0 60px rgba(255,180,40,.55),0 8px 0 #8a5300}
+.url{margin-top:12px;font-family:Anton;font-size:44px;letter-spacing:3px}
+.fine{margin-top:6px;font-weight:600;font-size:16px;opacity:.55}
+.credit{position:absolute;right:44px;top:118px;font-weight:600;font-size:15px;opacity:.75;display:none;text-shadow:0 1px 4px #000}
+</style></head><body>
+<canvas id="bg" width="1080" height="1920"></canvas>
+<img id="photo" alt=""><div class="grade" id="grade"></div>
+<div class="shade"></div>
+
+<div class="wrap">
+  <div class="top"><div class="logo">JARVIS SPORTS <span>AI</span></div><div class="desk">PLAYER INTELLIGENCE DESK</div></div>
+  <div class="hero">
+    <div class="live"><i></i>NBA CUP · FRIDAY</div>
+    <h1>LEBRON'S<br>RETURN</h1>
+    <div class="match">76ERS (8–1) AT CAVALIERS (4–4)</div>
+    <div class="pills"><span><b>TIP-OFF</b> 7:30 PM ET</span><span>PRIME VIDEO</span><span>ROCKET ARENA</span></div>
+  </div>
+  <div class="vs">
+    <div class="p l"><div class="ghost">PHI</div>
+      <div class="tag">76ERS · G</div>
+      <div class="nm">TYRESE<br>MAXEY</div>
+      <div class="big">28.0 PPG</div>
+      <div class="sm">5.4 ast · 3.8 reb per game<br>Sixers: 5 straight wins</div>
+    </div>
+    <div class="vsb">VS</div>
+    <div class="p r"><div class="ghost">CLE</div>
+      <div class="tag">CAVALIERS · G</div>
+      <div class="nm">DONOVAN<br>MITCHELL</div>
+      <div class="big">22.5 PPG</div>
+      <div class="sm">5.5 ast · 5.0 reb per game<br>32 pts in the opener vs PHI</div>
+    </div>
+  </div>
+  <div class="nug">
+    <div class="ring" data-hit="8" data-total="9"><svg viewBox="0 0 190 190"></svg><div class="n">8/9</div></div>
+    <div>
+      <div class="nt">📊 FROM THE JARVIS SAFE SHEET</div>
+      <div class="nh">MAXEY: 25+ PTS</div>
+      <div class="nx">25+ points in 8 of 9 games (avg 28.0). Season high: 38.</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="c" style="--acc:var(--a2);--acc2:var(--a2)"><div class="e">🔥</div><div class="t">STREAK · PHI</div><div class="h">5 STRAIGHT WINS</div><div class="d">Philly is 8–1 to start the season.</div></div>
+    <div class="c" style="--acc:#38bdf8;--acc2:#7dd3fc"><div class="e">💪</div><div class="t">BOARDS · PHI</div><div class="h">EMBIID: 7+ REB</div><div class="d">7+ rebounds in 7 of 7 (avg 10.0).</div></div>
+    <div class="c" style="--acc:var(--b2);--acc2:var(--b2)"><div class="e">👑</div><div class="t">HOMECOMING</div><div class="h">LEBRON IN CLE</div><div class="d">15.7 pts · 7.4 reb · 7.4 ast</div></div>
+    <div class="c" style="--acc:#e11d2e;--acc2:#ff5a66"><div class="e">🚑</div><div class="t">INJURY WATCH</div><div class="h">ALLEN DAY-TO-DAY</div><div class="d">CLE knee · Cavs have lost 2 straight</div></div>
+  </div>
+  <div class="way"><b style="color:var(--gold)">THE JARVIS WAY:</b> Verified game-watch facts — not predictions or guarantees. The full Safe Sheet is for members.</div>
+</div>
+<div class="credit" id="credit"></div>
+<div class="foot">
+  <div class="cta">SUBSCRIBE TODAY · 1 MONTH FREE ➜</div>
+  <div class="url">JARVISSPORTSAI.COM</div>
+  <div class="fine">Verified game-watch facts, not predictions or guarantees. For entertainment purposes only.</div>
+</div>
+
+<script>
+const CONFIG = {
+  "sport": "basketball",
+  "colorA": "#006BB6",
+  "colorA2": "#ED174C",
+  "colorB": "#860038",
+  "colorB2": "#FDBB30",
+  "venuePhoto": "../../assets/venues/rocket-arena.jpg",
+  "photoCredit": "Photo: Erik Drost · CC BY 2.0 · Wikimedia Commons (cropped, edited)",
+  "seed": 611
+};
+const R=document.documentElement.style;
+R.setProperty('--a',CONFIG.colorA);R.setProperty('--a2',CONFIG.colorA2);R.setProperty('--b',CONFIG.colorB);R.setProperty('--b2',CONFIG.colorB2);
+
+// progress ring for the nugget
+document.querySelectorAll('.ring').forEach(r=>{
+  const hit=+r.dataset.hit,tot=+r.dataset.total,svg=r.querySelector('svg');let s='';
+  const gap=10,seg=360/tot;
+  for(let i=0;i<tot;i++){const a0=(i*seg+gap/2-90)*Math.PI/180,a1=((i+1)*seg-gap/2-90)*Math.PI/180,rr=82;
+    const x0=95+rr*Math.cos(a0),y0=95+rr*Math.sin(a0),x1=95+rr*Math.cos(a1),y1=95+rr*Math.sin(a1);
+    const on=i<hit;s+=`<path d="M${x0} ${y0} A${rr} ${rr} 0 0 1 ${x1} ${y1}" stroke="${on?'#ffcc33':'rgba(255,255,255,.18)'}" stroke-width="16" fill="none" stroke-linecap="round" ${on?'filter="url(#g)"':''}/>`;}
+  svg.innerHTML=`<defs><filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`+s;
+});
+
+drawStadium();
+if(CONFIG.venuePhoto){const im=document.getElementById('photo');im.src=CONFIG.venuePhoto;im.style.display='block';document.getElementById('grade').style.display='block';
+  const c=document.getElementById('credit');c.textContent=CONFIG.photoCredit;c.style.display='block';}
+
+function drawStadium(){
+  const cv=document.getElementById('bg'),x=cv.getContext('2d'),W=1080,H=1920;
+  let sd=CONFIG.seed;const rnd=()=>((sd=(sd*16807)%2147483647)/2147483647);
+  // sky
+  let g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'#050a1c');g.addColorStop(.35,'#0b1530');g.addColorStop(.6,'#050811');g.addColorStop(1,'#02040a');
+  x.fillStyle=g;x.fillRect(0,0,W,H);
+  const cx=W/2, horizon=330;
+  // stadium bowl tiers (crowd)
+  const tiers=[[1500,520,380,'#0d1426'],[1320,450,300,'#111a30'],[1160,390,235,'#141f38']];
+  tiers.forEach(([rw,rh,yo,col],ti)=>{
+    x.save();x.beginPath();x.ellipse(cx,horizon+yo,rw/1.5,rh/1.4,0,Math.PI,2*Math.PI);x.fillStyle=col;x.fill();x.clip();
+    for(let i=0;i<9000;i++){const px=rnd()*W,py=horizon+yo-rh/1.4+rnd()*rh/1.4;
+      const t=rnd();x.fillStyle=t<.04?'rgba(255,255,255,.95)':t<.5?`hsla(${CONFIG.sport==='football'?200:210},20%,${18+rnd()*30}%,.9)`:(t<.75?CONFIG.colorA:CONFIG.colorB);
+      x.globalAlpha=t<.04?1:.55;x.fillRect(px,py,2+rnd()*2,2+rnd()*2);}
+    x.restore();
+    // tier rim
+    x.globalAlpha=1;x.strokeStyle='rgba(255,255,255,.12)';x.lineWidth=3;x.beginPath();x.ellipse(cx,horizon+yo,rw/1.5,rh/1.4,0,Math.PI,2*Math.PI);x.stroke();
+  });
+  x.globalAlpha=1;
+  // field in perspective
+  const fy=horizon+150, fb=880;
+  x.save();x.beginPath();x.moveTo(cx-300,fy);x.lineTo(cx+300,fy);x.lineTo(cx+900,fb);x.lineTo(cx-900,fb);x.closePath();
+  g=x.createLinearGradient(0,fy,0,fb);g.addColorStop(0,'#145c2a');g.addColorStop(1,'#0a3a1a');x.fillStyle=g;x.fill();x.clip();
+  const lerp=(a,b,t)=>a+(b-a)*t;
+  if(CONFIG.sport==='football'||CONFIG.sport==='baseball'){
+    for(let i=0;i<14;i++){const t0=Math.pow(i/14,1.6),t1=Math.pow((i+1)/14,1.6);x.fillStyle=i%2?'rgba(255,255,255,.04)':'rgba(0,0,0,.06)';
+      const y0=lerp(fy,fb,t0),y1=lerp(fy,fb,t1),w0=lerp(300,900,t0),w1=lerp(300,900,t1);
+      x.beginPath();x.moveTo(cx-w0,y0);x.lineTo(cx+w0,y0);x.lineTo(cx+w1,y1);x.lineTo(cx-w1,y1);x.fill();}
+  }
+  if(CONFIG.sport==='football'){
+    x.strokeStyle='rgba(255,255,255,.55)';
+    for(let i=0;i<=10;i++){const t=Math.pow(i/10,1.6),y=lerp(fy,fb,t),w=lerp(260,820,t);x.lineWidth=lerp(1.5,5,t);x.beginPath();x.moveTo(cx-w,y);x.lineTo(cx+w,y);x.stroke();}
+    // end zone tints
+    x.fillStyle=CONFIG.colorB;x.globalAlpha=.55;x.beginPath();x.moveTo(cx-300,fy);x.lineTo(cx+300,fy);x.lineTo(cx+330,fy+40);x.lineTo(cx-330,fy+40);x.fill();x.globalAlpha=1;
+  } else if(CONFIG.sport==='baseball'){
+    x.fillStyle='#8a5a32';x.beginPath();x.moveTo(cx,fy+120);x.lineTo(cx+230,fy+330);x.lineTo(cx,fb-60);x.lineTo(cx-230,fy+330);x.closePath();x.fill();
+    x.fillStyle='#145c2a';x.beginPath();x.moveTo(cx,fy+175);x.lineTo(cx+150,fy+325);x.lineTo(cx,fb-140);x.lineTo(cx-150,fy+325);x.closePath();x.fill();
+    x.fillStyle='#fff';[[cx,fy+120],[cx+230,fy+330],[cx-230,fy+330]].forEach(([a,b])=>x.fillRect(a-8,b-8,16,16));
+  } else {
+    x.fillStyle=CONFIG.sport==='hockey'?'#dfe9f2':'#b98a55';x.fillRect(0,fy,W,fb-fy);
+    x.strokeStyle=CONFIG.sport==='hockey'?'#c8102e':'rgba(255,255,255,.7)';x.lineWidth=5;x.beginPath();x.ellipse(cx,(fy+fb)/2,180,70,0,0,2*Math.PI);x.stroke();
+  }
+  x.restore();
+  // light towers + beams
+  const towers=[[90,170],[330,90],[750,90],[990,170]];
+  x.globalCompositeOperation='lighter';
+  towers.forEach(([tx,ty])=>{
+    // beam
+    g=x.createLinearGradient(tx,ty,cx,fy+300);g.addColorStop(0,'rgba(255,248,220,.35)');g.addColorStop(1,'rgba(255,248,220,0)');
+    x.fillStyle=g;x.beginPath();x.moveTo(tx-60,ty);x.lineTo(tx+60,ty);x.lineTo(cx+(tx<cx?150:350),fy+380);x.lineTo(cx-(tx<cx?350:150),fy+380);x.closePath();x.fill();
+    // glow
+    let rg=x.createRadialGradient(tx,ty,0,tx,ty,220);rg.addColorStop(0,'rgba(255,255,240,.95)');rg.addColorStop(.15,'rgba(255,240,200,.55)');rg.addColorStop(1,'rgba(255,220,150,0)');
+    x.fillStyle=rg;x.fillRect(tx-220,ty-220,440,440);
+    // bulbs
+    for(let r=0;r<4;r++)for(let c=0;c<7;c++){x.fillStyle='rgba(255,255,255,1)';x.beginPath();x.arc(tx-42+c*14,ty-18+r*12,4,0,7);x.fill();}
+  });
+  // camera flashes
+  for(let i=0;i<70;i++){const px=rnd()*W,py=horizon-120+rnd()*520,rr=6+rnd()*22;
+    let rg=x.createRadialGradient(px,py,0,px,py,rr);rg.addColorStop(0,'rgba(255,255,255,.9)');rg.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=rg;x.fillRect(px-rr,py-rr,rr*2,rr*2);}
+  x.globalCompositeOperation='source-over';
+  // haze + team color washes
+  g=x.createRadialGradient(cx,fy+150,50,cx,fy+150,700);g.addColorStop(0,'rgba(200,220,255,.18)');g.addColorStop(1,'rgba(200,220,255,0)');x.fillStyle=g;x.fillRect(0,0,W,H);
+  g=x.createLinearGradient(0,0,W,0);g.addColorStop(0,hexA(CONFIG.colorA,.55));g.addColorStop(.42,hexA(CONFIG.colorA,0));g.addColorStop(.58,hexA(CONFIG.colorB,0));g.addColorStop(1,hexA(CONFIG.colorB,.55));
+  x.fillStyle=g;x.fillRect(0,0,W,H);
+  // film grain
+  const id=x.getImageData(0,0,W,H),d=id.data;for(let i=0;i<d.length;i+=4){const n=(rnd()-.5)*14;d[i]+=n;d[i+1]+=n;d[i+2]+=n;}x.putImageData(id,0,0);
+}
+function hexA(h,a){h=h.replace('#','');const n=parseInt(h,16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`}
+</script>
+</body></html>
