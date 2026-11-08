@@ -46,5 +46,17 @@
     "license": "CC BY-SA 4.0",
     "source": "https://commons.wikimedia.org/wiki/File:NotreDameStadiumNight.jpg",
     "modified": "cropped, blurred, color-graded"
+  },
+  "santiago-bernabeu": {
+    "author": "Markus Unger",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Santiago-Bernabeu-May-2013.jpg",
+    "modified": "cropped, blurred, color-graded"
+  },
+  "soldier-field": {
+    "author": "Warren LeMay",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Soldier_Field,_Lake_Shore_Drive,_Chicago,_IL;_November_2023_(54216761589).jpg",
+    "modified": "cropped, blurred, color-graded"
   }
 }
