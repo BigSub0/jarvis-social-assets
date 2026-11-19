@@ -1,0 +1,90 @@
+{% extends "base.html.j2" %}
+{% from "macros.j2" import mark, wordmark with context %}
+{# LOOK: HUD — the JARVIS AI scanner. JetBrains Mono + Space Grotesk + Orbitron numbers. #}
+{% block css %}
+body{font-family:Grotesk,sans-serif;background:
+  radial-gradient(900px 700px at 0% 18%,color-mix(in srgb,var(--a) 70%,transparent),transparent 70%),
+  radial-gradient(900px 700px at 100% 40%,color-mix(in srgb,var(--b) 75%,transparent),transparent 70%),var(--ink)}
+.grid-bg{position:absolute;inset:0;background:
+  repeating-linear-gradient(0deg,rgba(122,222,255,.07) 0 1px,transparent 1px 60px),
+  repeating-linear-gradient(90deg,rgba(122,222,255,.07) 0 1px,transparent 1px 60px)}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 5px);pointer-events:none}
+.content{position:absolute;inset:0;padding:40px 48px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.wmt{font-family:Orbitron;font-weight:900;font-size:38px;letter-spacing:2px}.wmt span{color:var(--lime)}
+.sys{font-family:PlexMono;font-weight:700;font-size:20px;color:var(--cyan);text-align:right;line-height:1.4;letter-spacing:1px}
+.cmd{margin-top:28px;font-family:PlexMono;font-weight:700;font-size:28px;color:var(--cyan);letter-spacing:1px}
+.cmd b{color:var(--gold)}.cmd i{display:inline-block;width:16px;height:30px;background:var(--gold);vertical-align:-5px;margin-left:6px}
+.hero{position:relative;margin-top:16px;padding:22px 30px 26px}
+.br{position:absolute;width:56px;height:56px;border:5px solid var(--gold)}
+.br.tl{left:0;top:0;border-right:0;border-bottom:0}.br.tr{right:0;top:0;border-left:0;border-bottom:0}
+.br.bl{left:0;bottom:0;border-right:0;border-top:0}.br.brr{right:0;bottom:0;border-left:0;border-top:0}
+.live{display:inline-block;font-family:PlexMono;font-weight:800;font-size:24px;letter-spacing:3px;color:var(--ink);background:var(--cyan);padding:6px 14px}
+h1{margin-top:12px;font-weight:700;font-size:138px;line-height:.92;letter-spacing:-3px}
+h1 .l2{color:var(--gold);text-shadow:0 0 40px rgba(184,235,107,.45)}
+.match{margin-top:18px;font-weight:700;font-size:34px;letter-spacing:1px}
+.cells{margin-top:22px;display:grid;grid-template-columns:1.1fr .9fr 1.2fr;border:2px solid rgba(122,222,255,.5)}
+.cells div{padding:12px 16px;border-right:2px solid rgba(122,222,255,.5)}.cells div:last-child{border:0}
+.cells small{display:block;font-family:PlexMono;font-weight:700;font-size:17px;color:var(--cyan);letter-spacing:2px}
+.cells b{display:block;font-weight:700;font-size:30px;margin-top:4px}
+.pl{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pc{position:relative;padding:20px 24px;background:rgba(5,10,20,.72);border:2px solid rgba(255,255,255,.18);border-top:8px solid var(--c)}
+.pc .id{font-family:PlexMono;font-weight:700;font-size:18px;color:var(--cyan);letter-spacing:2px}
+.pc .nm{font-family:Orbitron;font-weight:900;font-size:44px;line-height:1.05;margin:10px 0 12px}
+.pc .st{font-family:Orbitron;font-weight:900;font-size:36px;color:var(--c2)}
+.pc .sb{font-family:PlexMono;font-weight:500;font-size:20px;margin-top:10px;line-height:1.45;color:#cfe3f5}
+.bar{height:10px;background:rgba(255,255,255,.12);margin-top:12px}.bar i{display:block;height:100%;background:var(--c2)}
+.nug{margin-top:16px;padding:16px 24px;border:3px solid var(--gold);background:linear-gradient(90deg,rgba(184,235,107,.16),rgba(5,10,20,.8));box-shadow:0 0 50px rgba(184,235,107,.25)}
+.nug .lbl{font-family:PlexMono;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:3px}
+.nrow{display:flex;align-items:center;gap:30px;margin-top:10px}
+.big{font-family:Orbitron;font-weight:900;font-size:108px;color:var(--gold);line-height:1;text-shadow:0 0 30px rgba(184,235,107,.6)}
+.dots{display:flex;flex-wrap:wrap;gap:8px;flex:1;align-content:center}
+.dots i{width:30px;height:30px;border:3px solid rgba(255,255,255,.35)}.dots i.on{background:var(--gold);border-color:var(--gold);box-shadow:0 0 12px rgba(184,235,107,.7)}
+.nh{font-weight:700;font-size:46px;margin-top:6px}
+.nx{font-family:PlexMono;font-weight:500;font-size:21px;line-height:1.45;margin-top:6px;color:#e6eefc}
+.log{margin-top:14px;border-top:2px solid rgba(122,222,255,.4)}
+.log div{display:flex;align-items:center;gap:16px;padding:7px 4px;border-bottom:2px solid rgba(122,222,255,.25)}
+.log .k{font-family:PlexMono;font-weight:700;font-size:20px;color:var(--cyan);width:52px}
+.log .e{font-size:30px;width:40px}
+.log .h{font-weight:700;font-size:32px;width:300px}
+.log .d{font-family:PlexMono;font-weight:500;font-size:20px;color:#cfe3f5;flex:1}
+.foot{position:absolute;left:48px;right:48px;bottom:26px;text-align:center}
+.cta{position:relative;height:96px;display:flex;align-items:center;justify-content:center;background:var(--gold);color:var(--ink);font-family:Orbitron;font-weight:900;font-size:38px;letter-spacing:1px;
+  clip-path:polygon(24px 0,100% 0,100% calc(100% - 24px),calc(100% - 24px) 100%,0 100%,0 24px);box-shadow:0 0 50px rgba(184,235,107,.5)}
+.url{margin-top:12px;font-family:PlexMono;font-weight:800;font-size:38px;letter-spacing:2px}.url span{color:var(--gold)}
+.fine{margin-top:6px;font-family:PlexMono;font-weight:500;font-size:14px;opacity:.6}
+{% endblock %}
+{% block body %}
+<div class="grid-bg"></div>
+<div class="content">
+  <div class="top">{{ wordmark(96) }}<div class="sys">SYS://SAFE-SHEET<br>{{ d.date }} · ONLINE</div></div>
+  <div class="cmd">&gt; JARVIS SCAN: <b>{{ d.away.abbr }} @ {{ d.home.abbr }}</b><i></i></div>
+  <div class="hero"><span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br brr"></span>
+    <div class="live">● {{ d.live }}</div>
+    <h1><span class="fit">{{ d.hook[0] }}</span><span class="fit l2">{{ d.hook[1] }}</span></h1>
+    <div class="match fit">{{ d.match }}</div>
+    <div class="cells"><div><small>{{ d.time_label }}</small><b class="fit">{{ d.time }}</b></div><div><small>NETWORK</small><b class="fit">{{ d.network }}</b></div><div><small>VENUE</small><b class="fit">{{ d.venue }}</b></div></div>
+  </div>
+  <div class="pl">
+    {% for p in [d.p1,d.p2] %}<div class="pc" style="--c:{{ p.t.color }};--c2:{{ p.t.color2 if p.t.color2|lower not in ['#a2aaad','#b8c4ca','#a5acaf'] else '#7adeff' }}">
+      <div class="id">TARGET 0{{ loop.index }} · {{ p.t.abbr }} {{ p.pos }}</div>
+      <div class="nm"><span class="fit">{{ p.first }}</span><span class="fit">{{ p.last }}</span></div>
+      <div class="st fit">{{ p.stat }}</div>
+      <div class="bar"><i style="width:{{ [55,78][loop.index0] }}%"></i></div>
+      <div class="sb">{{ p.sub[0] }}<br>{{ p.sub[1] }}</div>
+    </div>{% endfor %}
+  </div>
+  <div class="nug">
+    <div class="lbl">📊 {{ b.sheet }} · GAME LOG HIT RATE</div>
+    <div class="nrow"><div class="big">{{ d.nugget.frac }}</div>
+      <div class="dots">{% for i in range(d.nugget.total) %}<i class="{{ 'on' if i < d.nugget.hit }}"></i>{% endfor %}</div></div>
+    <div class="nh fit">{{ d.nugget.head }}</div>
+    <div class="nx">{{ d.nugget.text }}</div>
+  </div>
+  <div class="log">
+    {% for n in d.notes %}<div><span class="k">[0{{ loop.index }}]</span><span class="e">{{ n.e }}</span><span class="h fit">{{ n.h }}</span><span class="d">{{ n.d }}</span></div>{% endfor %}
+  </div>
+</div>
+<div class="scan"></div>
+<div class="foot"><div class="cta">{{ b.cta }}</div><div class="url"><span>&gt;</span> {{ b.url }}</div><div class="fine">{{ b.fine }}</div></div>
+{% endblock %}

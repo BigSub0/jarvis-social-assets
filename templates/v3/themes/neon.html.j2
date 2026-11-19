@@ -1,0 +1,62 @@
+{% extends "base.html.j2" %}
+{% from "macros.j2" import mark, wordmark with context %}
+{# LOOK: NEON — night mode: Orbitron + Rajdhani, synthwave grid, glowing team-colour outlines. #}
+{% block css %}
+body{font-family:Rajdhani,sans-serif;background:#05070c}
+.glowA{position:absolute;left:-300px;top:180px;width:900px;height:900px;border-radius:50%;background:radial-gradient(color-mix(in srgb,var(--a2) 55%,transparent),transparent 65%);filter:blur(30px)}
+.glowB{position:absolute;right:-300px;top:420px;width:900px;height:900px;border-radius:50%;background:radial-gradient(color-mix(in srgb,var(--b2) 55%,transparent),transparent 65%);filter:blur(30px)}
+.floor{position:absolute;left:-400px;right:-400px;top:560px;height:900px;transform:perspective(500px) rotateX(62deg);transform-origin:top;
+  background:repeating-linear-gradient(90deg,rgba(122,222,255,.55) 0 3px,transparent 3px 90px),repeating-linear-gradient(0deg,rgba(184,235,107,.5) 0 3px,transparent 3px 90px);
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 75%)}
+.sun{position:absolute;left:50%;top:330px;width:560px;height:560px;margin-left:-280px;border-radius:50%;background:linear-gradient(180deg,var(--lime),var(--cyan));opacity:.22;
+  -webkit-mask-image:repeating-linear-gradient(180deg,#000 0 26px,transparent 26px 36px)}
+.content{position:absolute;inset:0;padding:38px 50px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.wmt{font-family:Orbitron;font-weight:900;font-size:28px;letter-spacing:2px;text-shadow:0 0 18px rgba(122,222,255,.8)}.wmt span{color:var(--lime);text-shadow:0 0 18px rgba(184,235,107,.9)}
+.live{white-space:nowrap;font-family:Orbitron;font-weight:700;font-size:16px;letter-spacing:2px;padding:10px 14px;border:2px solid #ff3d7f;color:#ff8fb5;box-shadow:0 0 18px rgba(255,61,127,.7),inset 0 0 12px rgba(255,61,127,.5);border-radius:8px}
+.hero{margin-top:84px;text-align:center}
+h1{font-family:Orbitron;font-weight:900;font-size:132px;line-height:1.02;letter-spacing:2px}
+h1 .l1{color:#fff;text-shadow:0 0 10px #fff,0 0 30px var(--cyan),0 0 60px var(--cyan)}
+h1 .l2{color:var(--lime);text-shadow:0 0 10px var(--lime),0 0 34px var(--lime),0 0 70px var(--lime-lo)}
+.match{margin-top:24px;font-weight:700;font-size:42px;letter-spacing:2px}
+.pills{margin-top:16px;display:flex;justify-content:center;gap:14px}
+.pills span{padding:8px 20px;border:2px solid var(--cyan);border-radius:40px;font-weight:700;font-size:28px;letter-spacing:1px;box-shadow:0 0 14px rgba(122,222,255,.55);background:rgba(5,7,12,.6)}
+.pills b{color:var(--lime)}
+.pl{margin-top:92px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pc{padding:22px 24px;border-radius:18px;border:3px solid var(--c);background:rgba(5,7,12,.78);box-shadow:0 0 26px var(--c),inset 0 0 22px color-mix(in srgb,var(--c) 45%,transparent)}
+.pc .k{font-family:Orbitron;font-weight:700;font-size:18px;letter-spacing:3px;color:var(--c)}
+.pc .nm{font-family:Orbitron;font-weight:900;font-size:46px;line-height:1.08;margin:10px 0}
+.pc .st{font-family:Orbitron;font-weight:900;font-size:36px;color:var(--lime);text-shadow:0 0 14px rgba(184,235,107,.8)}
+.pc .sb{font-weight:600;font-size:24px;line-height:1.3;margin-top:8px;opacity:.92}
+.nug{margin-top:40px;display:flex;align-items:center;gap:26px;padding:20px 26px;border-radius:18px;border:3px solid var(--lime);background:rgba(5,7,12,.82);box-shadow:0 0 30px rgba(184,235,107,.55)}
+.ring{position:relative;width:180px;height:180px;flex:none}.ring svg{position:absolute;inset:0}
+.ring .n{position:absolute;inset:0;display:grid;place-items:center;font-family:Orbitron;font-weight:900;font-size:{{ 52 if d.nugget.frac|length<5 else 40 }}px;color:var(--lime);text-shadow:0 0 16px var(--lime)}
+.nk{font-family:Orbitron;font-weight:700;font-size:19px;letter-spacing:3px;color:var(--cyan)}
+.nh{font-family:Orbitron;font-weight:900;font-size:40px;margin:8px 0}
+.nx{font-weight:600;font-size:25px;line-height:1.3}
+.grid{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.c{padding:20px 20px;border-radius:14px;background:rgba(5,7,12,.82);border:2px solid rgba(255,255,255,.12);border-left:6px solid var(--k);box-shadow:-8px 0 20px -8px var(--k)}
+.c .h{font-family:Orbitron;font-weight:900;font-size:30px}.c .d{font-weight:600;font-size:22px;opacity:.9;margin-top:4px}
+.foot{position:absolute;left:50px;right:50px;bottom:24px;text-align:center}
+.cta{height:96px;display:flex;align-items:center;justify-content:center;border-radius:60px;background:var(--lime);color:#05070c;font-family:Orbitron;font-weight:900;font-size:34px;letter-spacing:1px;box-shadow:0 0 24px var(--lime),0 0 70px rgba(184,235,107,.6)}
+.url{margin-top:14px;font-family:Orbitron;font-weight:900;font-size:36px;letter-spacing:4px;color:var(--cyan);text-shadow:0 0 16px var(--cyan)}
+.fine{margin-top:6px;font-weight:600;font-size:15px;opacity:.6}
+{% endblock %}
+{% block body %}
+<div class="glowA"></div><div class="glowB"></div><div class="sun"></div><div class="floor"></div>
+<div class="content">
+  <div class="top">{{ wordmark(84) }}<div class="live">● {{ d.live }}</div></div>
+  <div class="hero">
+    <h1><span class="fit l1">{{ d.hook[0] }}</span><span class="fit l2">{{ d.hook[1] }}</span></h1>
+    <div class="match fit">{{ d.match }}</div>
+    <div class="pills"><span><b>{{ d.time_label }}</b> {{ d.time }}</span><span>{{ d.network }}</span><span class="fit" style="max-width:380px">{{ d.venue }}</span></div>
+  </div>
+  {% set nc = ['#7adeff','#b8eb6b','#ff3d7f','#bb9af4'] %}
+  <div class="pl">{% for p in [d.p1,d.p2] %}<div class="pc" style="--c:{{ nc[loop.index0*2] if loop.index0==0 else '#ff3d7f' }}"><div class="k">{{ p.t.name|upper }} · {{ p.pos }}</div>
+    <div class="nm"><span class="fit">{{ p.first }}</span><span class="fit">{{ p.last }}</span></div><div class="st fit">{{ p.stat }}</div><div class="sb">{{ p.sub[0] }}<br>{{ p.sub[1] }}</div></div>{% endfor %}</div>
+  <div class="nug"><div class="ring">{{ ring(d.nugget.hit, d.nugget.total, b.lime, 'rgba(255,255,255,.14)', 190, 14) }}<div class="n">{{ d.nugget.frac }}</div></div>
+    <div style="min-width:0;flex:1"><div class="nk">📊 {{ b.sheet }}</div><div class="nh fit">{{ d.nugget.head }}</div><div class="nx">{{ d.nugget.text }}</div></div></div>
+  <div class="grid">{% for n in d.notes %}<div class="c" style="--k:{{ nc[loop.index0] }}"><div class="h fit">{{ n.e }} {{ n.h }}</div><div class="d">{{ n.d }}</div></div>{% endfor %}</div>
+</div>
+<div class="foot"><div class="cta">{{ b.cta }}</div><div class="url">{{ b.url }}</div><div class="fine">{{ b.fine }}</div></div>
+{% endblock %}

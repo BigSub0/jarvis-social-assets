@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-19", "sport": "basketball", "seed": 4417,
+  "live": "NBA · THURSDAY NIGHT", "hook": ["KAT ON", "THE GLASS"],
+  "time": "8:00 PM ET", "network": "NBA TV", "venue": "TARGET CENTER", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Knicks", "city": "New York", "abbr": "NYK", "rec": "8-6", "color": "#006BB6", "color2": "#F58426"},
+  "home": {"name": "Timberwolves", "city": "Minnesota", "abbr": "MIN", "rec": "11-4", "color": "#0C2340", "color2": "#78BE20"},
+  "p1": {"team": "away", "pos": "GUARD", "first": "JALEN", "last": "BRUNSON", "stat": "27.0 PPG", "sub": ["5.9 APG this season", "19+ pts in 14 of 14"]},
+  "p2": {"team": "home", "pos": "FORWARD", "first": "JADEN", "last": "MCDANIELS", "stat": "17.1 PPG", "sub": ["Shooting 53.0% from field", "Wolves 7–2 at home"]},
+  "nugget": {"hit": 14, "total": 14, "player": "KARL-ANTHONY TOWNS", "head": "TOWNS: 10+ REBOUNDS", "text": "10+ rebounds in all 14 games this season (avg 14.1). Season high: 20 vs Detroit."},
+  "notes": [
+    {"e": "🔥", "t": "HOT HAND · NYK", "h": "BRUNSON 31", "d": "31 pts in his last game"},
+    {"e": "🎯", "t": "SNIPER · MIN", "h": "BALL 3.8 3PM", "d": "Threes per game, last 10"},
+    {"e": "💪", "t": "GLASS · NYK", "h": "KAT 20.7/14.1", "d": "Pts/reb over last 10 games"},
+    {"e": "🚑", "t": "INJURY · MIN", "h": "EDWARDS OUT", "d": "Knee; Kuminga day to day"}
+  ]
+}

@@ -1,0 +1,62 @@
+{% extends "base.html.j2" %}
+{% from "macros.j2" import mark, wordmark with context %}
+{# LOOK: MIXTAPE — street poster: Permanent Marker + Bebas Neue, paper, tape and stickers. #}
+{% block css %}
+body{font-family:Oswald,sans-serif;background:var(--a)}
+.half{position:absolute;inset:0;background:radial-gradient(rgba(0,0,0,.28) 2.2px,transparent 2.6px) 0 0/14px 14px}
+.slash{position:absolute;left:-200px;right:-200px;top:820px;height:420px;background:var(--b);transform:rotate(-9deg);box-shadow:0 0 0 14px var(--lime)}
+.dark{position:absolute;left:0;right:0;bottom:0;height:560px;background:linear-gradient(180deg,transparent,var(--ink) 30%)}
+.content{position:absolute;inset:0;padding:36px 50px}
+.top{display:flex;justify-content:space-between;align-items:flex-start}
+.tape{background:rgba(235,239,245,.88);color:var(--ink);font-family:Bebas;font-size:34px;letter-spacing:2px;padding:6px 22px;transform:rotate(3deg);box-shadow:0 6px 14px rgba(0,0,0,.35)}
+.top .logo{filter:drop-shadow(0 8px 14px rgba(0,0,0,.5));transform:rotate(-6deg)}
+.sticker{position:absolute;right:40px;top:180px;width:190px;height:190px;border-radius:50%;background:var(--lime);color:var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:Bebas;font-size:40px;line-height:.95;transform:rotate(14deg);box-shadow:0 10px 0 rgba(0,0,0,.35);border:5px solid var(--ink);padding:16px}
+.paper{margin-top:40px;width:760px;background:var(--white);color:var(--ink);padding:16px 30px 10px;transform:rotate(-3deg);
+  clip-path:polygon(0 6%,4% 0,12% 5%,22% 1%,35% 6%,48% 0,60% 5%,73% 1%,86% 6%,100% 2%,99% 92%,92% 100%,80% 95%,66% 100%,52% 94%,38% 100%,24% 95%,10% 100%,0 94%)}
+.paper .l1{font-family:Marker;font-size:124px;line-height:1.05}
+.l2{display:block;margin:8px 0 0 30px;font-family:Marker;font-size:134px;line-height:1.05;color:var(--lime);text-shadow:6px 6px 0 var(--ink),-2px -2px 0 var(--ink);transform:rotate(-3deg);width:960px}
+.strip{margin-top:28px;background:var(--ink);padding:12px 22px;transform:rotate(-1deg);font-family:Bebas;font-size:44px;letter-spacing:2px;display:flex;justify-content:space-between;gap:16px}
+.strip b{color:var(--lime);font-weight:400}
+.pols{margin-top:52px;display:flex;justify-content:space-between}
+.pol{width:470px;background:var(--white);color:var(--ink);padding:18px 22px 20px;box-shadow:0 14px 30px rgba(0,0,0,.45);position:relative}
+.pol:nth-child(1){transform:rotate(-3deg)}.pol:nth-child(2){transform:rotate(2.5deg)}
+.pol:after{content:"";position:absolute;top:-16px;left:50%;width:130px;height:34px;margin-left:-65px;background:rgba(184,235,107,.75);transform:rotate(-4deg)}
+.pol .k{font-family:Bebas;font-size:30px;letter-spacing:2px;color:var(--c)}
+.pol .nm{font-family:Bebas;font-size:84px;line-height:.86}
+.pol .st{display:inline-block;margin-top:8px;font-family:Bebas;font-size:50px;padding:0 12px;background:linear-gradient(transparent 22%,var(--lime) 22%,var(--lime) 88%,transparent 88%)}
+.pol .sb{font-weight:500;font-size:22px;line-height:1.3;margin-top:6px}
+.pol .ab{position:absolute;right:16px;top:14px;font-family:Bebas;font-size:58px;color:var(--c);opacity:.25}
+.nug{margin-top:52px;display:flex;align-items:center;gap:26px}
+.stamp{flex:none;width:240px;height:240px;border-radius:50%;border:8px double var(--lime);color:var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);background:rgba(11,14,20,.7)}
+.stamp .n{font-family:Bebas;font-size:{{ 112 if d.nugget.frac|length<5 else 96 }}px;line-height:.9}
+.stamp .k{font-family:Bebas;font-size:26px;letter-spacing:3px}
+.note{flex:1;background:var(--lime);color:var(--ink);padding:16px 22px;transform:rotate(1.5deg);box-shadow:0 10px 22px rgba(0,0,0,.4)}
+.note .k{font-family:PlexMono;font-weight:700;font-size:18px;letter-spacing:3px}
+.note .h{font-family:Bebas;font-size:56px;line-height:1}
+.note .x{font-weight:500;font-size:22px;line-height:1.3}
+.notes{margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sn{padding:16px 14px 18px;background:var(--white);color:var(--ink);box-shadow:0 8px 16px rgba(0,0,0,.4)}
+.sn:nth-child(odd){transform:rotate(-2.5deg)}.sn:nth-child(even){transform:rotate(2deg)}
+.sn .e{font-size:30px}.sn .h{font-family:Bebas;font-size:44px;line-height:.95;margin-top:2px}.sn .d{font-weight:500;font-size:19px;line-height:1.25;margin-top:4px}
+.foot{position:absolute;left:50px;right:50px;bottom:24px;text-align:center}
+.cta{height:100px;display:flex;align-items:center;justify-content:center;background:var(--lime);color:var(--ink);font-family:Bebas;font-size:62px;letter-spacing:2px;border:5px solid var(--ink);box-shadow:10px 10px 0 var(--cyan);transform:rotate(-1deg)}
+.url{margin-top:14px;font-family:Marker;font-size:46px}
+.fine{margin-top:2px;font-weight:500;font-size:14px;opacity:.6}
+{% endblock %}
+{% block body %}
+<div class="half"></div><div class="slash"></div><div class="dark"></div>
+<div class="content">
+  <div class="top">{{ mark(150) }}<div class="tape">{{ d.live }}</div></div>
+  <div class="sticker">{{ d.time_label }}<br>{{ d.time }}</div>
+  <div class="paper"><span class="l1 fit">{{ d.hook[0] }}</span></div>
+  <span class="l2 fit">{{ d.hook[1] }}</span>
+  <div class="strip"><span class="fit">{{ d.match }}</span><b>{{ d.network }}</b></div>
+  <div class="pols">{% for p in [d.p1,d.p2] %}<div class="pol" style="--c:{{ p.t.color }}"><div class="ab">{{ p.t.abbr }}</div><div class="k">{{ p.t.name|upper }} · {{ p.pos }}</div>
+    <div class="nm"><span class="fit">{{ p.first }}</span><span class="fit">{{ p.last }}</span></div><div class="st">{{ p.stat }}</div><div class="sb">{{ p.sub[0] }}<br>{{ p.sub[1] }}</div></div>{% endfor %}</div>
+  <div class="nug"><div class="stamp"><div class="k">SAFE SHEET</div><div class="n">{{ d.nugget.frac }}</div><div class="k">GAMES</div></div>
+    <div class="note"><div class="k">📊 {{ b.sheet }}</div><div class="h fit">{{ d.nugget.head }}</div><div class="x">{{ d.nugget.text }}</div></div></div>
+  <div class="notes">{% for n in d.notes %}<div class="sn"><div class="e">{{ n.e }}</div><div class="h">{{ n.h }}</div><div class="d">{{ n.d }}</div></div>{% endfor %}</div>
+</div>
+<div class="foot"><div class="cta">{{ b.cta }}</div><div class="url">{{ b.url|lower }}</div><div class="fine">{{ b.fine }} · {{ d.venue|title }}</div></div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html.j2" %}
+{% from "macros.j2" import mark, wordmark with context %}
+{# LOOK: BROADCAST — TV graphics package: Teko + Saira Condensed, scorebug, lower thirds. #}
+{% block css %}
+body{font-family:Saira,sans-serif}
+.split{position:absolute;left:0;right:0;top:0;height:1060px;background:linear-gradient(105deg,var(--a) 0 49.6%,var(--lime) 49.6% 50.4%,var(--b) 50.4% 100%)}
+.split:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.05) 40%,var(--ink) 100%)}
+.ga,.gb{position:absolute;top:120px;font-family:Teko;font-weight:700;font-size:520px;line-height:1;opacity:.14}
+.ga{left:-20px}.gb{right:-20px}
+.sweep{position:absolute;left:0;right:0;top:0;height:1060px;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.12) 45%,transparent 60%)}
+.content{position:absolute;inset:0;padding:36px 44px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.wmt{font-family:Teko;font-weight:700;font-size:58px;line-height:1;letter-spacing:1px}.wmt span{color:var(--lime)}
+.bug{display:flex;align-items:center;gap:10px;background:#e11d2e;padding:6px 18px;font-family:Teko;font-weight:600;font-size:36px;letter-spacing:2px}
+.bug i{width:14px;height:14px;border-radius:50%;background:#fff}
+.score{margin-top:50px;display:grid;grid-template-columns:1fr 330px 1fr;height:116px;border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.score .tm{display:flex;align-items:center;justify-content:space-between;padding:0 26px;font-family:Teko;font-weight:700;font-size:80px;line-height:1}
+.score .tm small{font-family:Saira;font-weight:800;font-size:30px;opacity:.95}
+.score .c{background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:4px solid var(--lime);border-right:4px solid var(--lime)}
+.score .c b{font-family:Teko;font-weight:600;font-size:52px;line-height:.9;color:var(--lime)}.score .c span{font-weight:800;font-size:22px;letter-spacing:2px}
+.ev{margin-top:14px;text-align:center;font-weight:800;font-size:26px;letter-spacing:4px}
+.lt{margin-top:84px}
+.lt .k{display:inline-block;background:var(--lime);color:var(--ink);font-family:PlexMono;font-weight:700;font-size:22px;letter-spacing:3px;padding:6px 16px}
+.lt .a{display:block;background:var(--white);color:var(--ink);font-family:Teko;font-weight:700;font-size:170px;line-height:.82;padding:20px 30px 0;width:fit-content;max-width:990px;clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%)}
+.lt .b2{display:block;background:var(--ink);color:var(--lime);font-family:Teko;font-weight:700;font-size:170px;line-height:.82;padding:20px 30px 0;margin-left:40px;width:fit-content;max-width:950px;clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%);border-left:12px solid var(--lime)}
+.gfx{margin-top:56px;display:flex;flex-direction:column;gap:14px}
+.row{display:grid;grid-template-columns:120px 1fr auto;align-items:stretch;background:rgba(19,24,32,.92);border-radius:10px;overflow:hidden}
+.row .ab{background:var(--c);display:flex;align-items:center;justify-content:center;font-family:Teko;font-weight:700;font-size:56px;border-right:5px solid var(--c2)}
+.row .mid{padding:12px 20px}
+.row .nm{font-family:Teko;font-weight:600;font-size:70px;line-height:.9}
+.row .sb{font-weight:600;font-size:22px;opacity:.85}
+.row .st{display:flex;align-items:center;padding:0 24px;background:var(--lime);color:var(--ink);font-family:Teko;font-weight:700;font-size:54px}
+.son{margin-top:36px;background:rgba(19,24,32,.95);border-radius:12px;overflow:hidden;border:2px solid var(--line)}
+.son .hd{display:flex;justify-content:space-between;background:var(--cyan);color:var(--ink);padding:6px 20px;font-family:PlexMono;font-weight:700;font-size:21px;letter-spacing:3px}
+.son .bd{display:flex;align-items:center;gap:24px;padding:16px 20px}
+.son .n{font-family:Teko;font-weight:700;font-size:120px;line-height:.8;color:var(--lime)}
+.pips{display:flex;gap:6px;margin-top:8px}.pips i{flex:1;height:22px;border-radius:3px;background:rgba(255,255,255,.15)}.pips i.on{background:var(--lime)}
+.son .h{font-family:Teko;font-weight:600;font-size:52px;line-height:.9}
+.son .x{font-weight:600;font-size:21px;opacity:.9;margin-top:6px}
+.tick{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tick div{background:rgba(19,24,32,.92);border-left:6px solid var(--lime);padding:14px 16px;border-radius:6px}
+.tick div:nth-child(2n){border-left-color:var(--cyan)}
+.tick b{font-family:Teko;font-weight:600;font-size:40px;line-height:.9;display:block}.tick span{font-weight:600;font-size:19px;opacity:.85}
+.foot{position:absolute;left:44px;right:44px;bottom:24px;text-align:center}
+.cta{height:94px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--lime);color:var(--ink);font-family:Teko;font-weight:700;font-size:64px;letter-spacing:1px;box-shadow:0 0 0 4px var(--ink),0 0 0 7px var(--lime)}
+.url{margin-top:12px;font-family:Teko;font-weight:600;font-size:52px;line-height:1;letter-spacing:3px}
+.fine{font-weight:600;font-size:14px;opacity:.6}
+{% endblock %}
+{% block body %}
+<div class="split"></div><div class="ga">{{ d.away.abbr }}</div><div class="gb">{{ d.home.abbr }}</div><div class="sweep"></div>
+<div class="content">
+  <div class="top">{{ wordmark(92) }}<div class="bug"><i></i>LIVE TONIGHT</div></div>
+  <div class="score">
+    <div class="tm" style="background:var(--a)"><span>{{ d.away.abbr }}</span><small>{{ d.away.rec }}</small></div>
+    <div class="c"><b>{{ d.time }}</b><span class="fit">{{ d.network }}</span></div>
+    <div class="tm" style="background:var(--b)"><small>{{ d.home.rec }}</small><span>{{ d.home.abbr }}</span></div>
+  </div>
+  <div class="ev fit">{{ d.live }} · {{ d.venue }}</div>
+  <div class="lt"><span class="k">{{ d.away.name|upper }} AT {{ d.home.name|upper }}</span><span class="a fit">{{ d.hook[0] }}</span><span class="b2 fit">{{ d.hook[1] }}</span></div>
+  <div class="gfx">{% for p in [d.p1,d.p2] %}<div class="row" style="--c:{{ p.t.color }};--c2:{{ p.t.color2 }}"><div class="ab">{{ p.t.abbr }}</div>
+    <div class="mid"><div class="nm fit">{{ p.first }} {{ p.last }}</div><div class="sb fit">{{ p.pos }} · {{ p.sub[0] }} · {{ p.sub[1] }}</div></div><div class="st">{{ p.stat }}</div></div>{% endfor %}</div>
+  <div class="son"><div class="hd"><span>📊 STAT OF THE NIGHT</span><span>{{ b.sheet }}</span></div>
+    <div class="bd"><div class="n">{{ d.nugget.frac }}</div><div style="flex:1;min-width:0"><div class="h fit">{{ d.nugget.head }}</div>
+      <div class="pips">{% for i in range(d.nugget.total) %}<i class="{{ 'on' if i < d.nugget.hit }}"></i>{% endfor %}</div><div class="x">{{ d.nugget.text }}</div></div></div></div>
+  <div class="tick">{% for n in d.notes %}<div><b class="fit">{{ n.e }} {{ n.h }}</b><span>{{ n.d }}</span></div>{% endfor %}</div>
+</div>
+<div class="foot"><div class="cta">{{ b.cta }}</div><div class="url">{{ b.url }}</div><div class="fine">{{ b.fine }}</div></div>
+{% endblock %}

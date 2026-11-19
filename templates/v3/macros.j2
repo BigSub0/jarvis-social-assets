@@ -1,0 +1,3 @@
+{#- Brand pieces shared by every look (logo + wordmark from jarvissportsai.com). -#}
+{%- macro mark(size=64) -%}<img class="logo" src="{{ rel }}{{ b.logo }}" style="height:{{ size }}px;width:auto;display:block;flex:none" alt="JARVIS Sports AI">{%- endmacro -%}
+{%- macro wordmark(size=84, cls="") -%}<div class="wm {{ cls }}">{{ mark(size) }}<div class="wmt"><b>{{ b.name1 }}</b> <span>{{ b.name2 }}</span></div></div>{%- endmacro -%}

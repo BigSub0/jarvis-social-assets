@@ -1,0 +1,62 @@
+{% extends "base.html.j2" %}
+{% from "macros.j2" import mark, wordmark with context %}
+{# LOOK: BOLD — Swiss poster: Archivo Black + IBM Plex, giant numbers, flat colour blocks. The stat is the hero. #}
+{% block css %}
+body{font-family:Plex,sans-serif;background:var(--ink)}
+.blkA{position:absolute;left:0;right:0;top:0;height:760px;background:var(--a)}
+.blkA:after{content:"";position:absolute;right:0;top:0;width:300px;height:760px;background:var(--b)}
+.content{position:absolute;inset:0}
+.top{position:relative;display:flex;justify-content:space-between;align-items:center;padding:34px 48px 0}
+.wmt{font-family:Archivo;font-size:34px;letter-spacing:1px}.wmt span{color:var(--lime)}
+.vtag{position:absolute;right:48px;top:150px;width:200px;font-family:PlexMono;font-weight:700;font-size:20px;letter-spacing:3px;line-height:1.5;text-align:right}
+.vtag b{display:block;font-family:Archivo;font-weight:400;font-size:84px;line-height:.95;letter-spacing:0}
+.hero{position:relative;padding:40px 48px 0}
+.live{font-family:PlexMono;font-weight:700;font-size:22px;letter-spacing:4px}
+.live:before{content:"";display:inline-block;width:16px;height:16px;background:var(--lime);margin-right:10px}
+h1{margin-top:40px;font-family:Archivo;font-weight:400;font-size:150px;line-height:.9;letter-spacing:-5px;width:720px}
+h1 .l2{color:var(--lime)}
+.abbr{margin-top:34px;font-family:Archivo;font-size:120px;line-height:.9;letter-spacing:-4px;opacity:.95;width:720px}.abbr span{color:transparent;-webkit-text-stroke:3px var(--white)}.abbr i{font-style:normal;color:var(--lime);margin:0 18px}
+.match{margin-top:20px;font-family:Plex;font-weight:700;font-size:32px;width:700px}
+.band{position:relative;display:grid;grid-template-columns:1fr 1fr 1.3fr;background:var(--white);color:var(--ink)}
+.band div{padding:16px 24px;border-right:3px solid var(--ink)}.band div:last-child{border:0}
+.band small{display:block;font-family:PlexMono;font-weight:700;font-size:17px;letter-spacing:3px;opacity:.7}
+.band b{display:block;font-family:Archivo;font-weight:400;font-size:34px;margin-top:2px}
+.hero2{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;background:var(--lime);color:var(--ink);padding:30px 48px 32px}
+.hero2 .n{font-family:Archivo;font-size:{{ 220 if d.nugget.frac|length<5 else 170 }}px;line-height:.85;letter-spacing:-8px}
+.hero2 .k{font-family:PlexMono;font-weight:700;font-size:19px;letter-spacing:3px}
+.hero2 .h{font-family:Archivo;font-size:46px;line-height:1;margin:8px 0}
+.hero2 .x{font-weight:600;font-size:23px;line-height:1.3}
+.duo{display:grid;grid-template-columns:1fr 1fr}
+.duo>div{padding:30px 30px 30px 48px;border-bottom:3px solid var(--ink)}
+.duo>div+div{padding-left:30px;border-left:3px solid var(--ink)}
+.duo .k{font-family:PlexMono;font-weight:700;font-size:18px;letter-spacing:3px;opacity:.85}
+.duo .nm{font-family:Archivo;font-size:64px;line-height:.95;margin:8px 0 10px;letter-spacing:-1px}
+.duo .st{font-family:Archivo;font-size:40px}
+.duo .sb{font-weight:600;font-size:21px;line-height:1.35;margin-top:6px;opacity:.95}
+.ns{display:grid;grid-template-columns:1fr 1fr;padding:14px 48px 0;gap:0 34px}
+.ns>div{display:grid;grid-template-columns:80px 1fr;padding:24px 0;border-bottom:2px solid var(--line)}
+.ns .i{font-family:Archivo;font-size:54px;line-height:1;color:var(--lime)}
+.ns .h{font-family:Archivo;font-size:38px;line-height:1}.ns .d{font-weight:500;font-size:22px;opacity:.85;margin-top:4px}
+.foot{position:absolute;left:48px;right:48px;bottom:24px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
+.cta{height:100px;display:flex;align-items:center;justify-content:center;background:var(--lime);color:var(--ink);font-family:Archivo;font-size:33px;letter-spacing:-.5px;white-space:nowrap}
+.url{margin-top:10px;font-family:Archivo;font-size:44px;letter-spacing:1px}
+.fine{font-weight:500;font-size:14px;opacity:.55;margin-top:2px}
+{% endblock %}
+{% block body %}
+<div class="blkA"></div>
+<div class="content">
+  <div class="top">{{ wordmark(90) }}</div>
+  <div class="vtag">{{ d.time_label }}<b>{{ d.time.replace(' ET','') }}</b>ET · {{ d.network }}</div>
+  <div class="hero"><div class="live">{{ d.live }}</div>
+    <h1><span class="fit">{{ d.hook[0] }}</span><span class="fit l2">{{ d.hook[1] }}</span></h1>
+    <div class="abbr"><span>{{ d.away.abbr }}</span><i>@</i><span>{{ d.home.abbr }}</span></div>
+    <div class="match fit">{{ d.away.name|upper }} ({{ d.away.rec }}) AT {{ d.home.name|upper }} ({{ d.home.rec }})</div></div>
+  <div style="height:{{ 0 }}px"></div>
+  <div style="position:absolute;top:760px;left:0;right:0">
+    <div class="hero2"><div class="n">{{ d.nugget.frac }}</div><div style="min-width:0"><div class="k">📊 {{ b.sheet }}</div><div class="h fit">{{ d.nugget.head }}</div><div class="x">{{ d.nugget.text }}</div></div></div>
+    <div class="duo">{% for p in [d.p1,d.p2] %}<div style="background:{{ p.t.color }}"><div class="k">{{ p.t.abbr }} · {{ p.pos }}</div><div class="nm"><span class="fit">{{ p.first }}</span><span class="fit">{{ p.last }}</span></div><div class="st fit">{{ p.stat }}</div><div class="sb">{{ p.sub[0] }}<br>{{ p.sub[1] }}</div></div>{% endfor %}</div>
+    <div class="ns">{% for n in d.notes %}<div><div class="i">0{{ loop.index }}</div><div style="min-width:0"><div class="h fit">{{ n.h }}</div><div class="d">{{ n.e }} {{ n.d }}</div></div></div>{% endfor %}</div>
+  </div>
+</div>
+<div class="foot"><div><div class="cta">{{ b.cta }}</div><div class="url">{{ b.url }}</div><div class="fine">{{ b.fine }} {{ d.venue|title }}.</div></div>{{ mark(170) }}</div>
+{% endblock %}

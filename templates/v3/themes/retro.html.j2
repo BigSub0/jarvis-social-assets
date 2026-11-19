@@ -1,0 +1,57 @@
+{% extends "base.html.j2" %}
+{% from "macros.j2" import mark, wordmark with context %}
+{# LOOK: RETRO — 80s trading card / arcade: Bungee + Oswald, sunset stripes, chrome type. #}
+{% block css %}
+body{font-family:Oswald,sans-serif;background:linear-gradient(180deg,#14092e 0%,color-mix(in srgb,var(--b) 70%,#14092e) 30%,color-mix(in srgb,var(--a) 70%,#0b0e14) 62%,var(--ink) 82%)}
+.stripes{position:absolute;left:0;right:0;top:560px;height:150px;background:linear-gradient(180deg,var(--lime) 0 18%,transparent 18% 30%,var(--cyan) 30% 46%,transparent 46% 58%,#ff7a3c 58% 72%,transparent 72% 82%,#ff3d7f 82% 92%,transparent 92%);transform:skewY(-6deg);opacity:.9}
+.stars{position:absolute;inset:0;background:radial-gradient(rgba(255,255,255,.7) 1px,transparent 1.6px) 0 0/90px 70px,radial-gradient(rgba(255,255,255,.45) 1px,transparent 1.6px) 40px 30px/130px 110px;height:600px}
+.content{position:absolute;inset:0;padding:36px 46px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.wmt{font-family:Bungee;font-size:34px}.wmt span{color:var(--lime)}
+.chip{font-family:Bungee;font-size:22px;background:#ff3d7f;padding:8px 16px;border-radius:30px;box-shadow:0 5px 0 #8a1240}
+.hero{margin-top:60px;text-align:center}
+h1{font-family:Bungee;font-size:150px;line-height:.98}
+h1 span{background:linear-gradient(180deg,#ffffff 0%,#dfe7f5 45%,#7b8aa6 50%,#ffffff 56%,#c9d6ea 100%);-webkit-background-clip:text;color:transparent;
+  filter:drop-shadow(5px 5px 0 var(--ink)) drop-shadow(4px 4px 0 var(--lime))}
+h1 .l2{background:linear-gradient(180deg,var(--lime-hi) 0%,var(--lime) 45%,var(--lime-lo) 52%,var(--lime-hi) 60%,var(--lime) 100%);-webkit-background-clip:text;filter:drop-shadow(5px 5px 0 var(--ink)) drop-shadow(4px 4px 0 #ff3d7f)}
+.match{margin-top:270px;font-family:Bungee;font-size:36px;text-align:center}
+.pills{margin-top:14px;display:flex;justify-content:center;gap:12px}
+.pills span{padding:8px 18px;border-radius:12px;background:var(--ink);border:3px solid var(--cyan);font-weight:700;font-size:26px;letter-spacing:1px}
+.pills b{color:var(--lime)}
+.cards{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.tc{border-radius:22px;padding:10px;background:linear-gradient(135deg,var(--lime-hi),var(--lime) 40%,var(--cyan));box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.tc .in{border-radius:14px;padding:16px 18px;background:linear-gradient(160deg,var(--c),color-mix(in srgb,var(--c) 40%,#0b0e14));position:relative;overflow:hidden;height:100%}
+.tc .no{font-family:Bungee;font-size:17px;opacity:.85}
+.tc .nm{font-family:Bungee;font-size:44px;line-height:1;margin:8px 0}
+.tc .st{display:inline-block;font-family:Bungee;font-size:28px;color:var(--ink);background:var(--lime);padding:4px 12px;border-radius:8px}
+.tc .sb{font-weight:500;font-size:21px;line-height:1.3;margin-top:8px}
+.tc .ab{position:absolute;right:-10px;bottom:-24px;font-family:Bungee;font-size:120px;opacity:.15}
+.arc{margin-top:34px;border-radius:20px;background:#05070c;border:5px solid var(--lime);box-shadow:0 0 0 5px var(--ink),0 0 0 9px #ff3d7f;padding:16px 24px;display:flex;align-items:center;gap:24px}
+.arc .k{font-family:Bungee;font-size:20px;color:#ff3d7f}
+.arc .n{font-family:Bungee;font-size:{{ 104 if d.nugget.frac|length<5 else 84 }}px;color:var(--lime);line-height:1;text-shadow:0 0 18px rgba(184,235,107,.7)}
+.arc .h{font-family:Bungee;font-size:32px;line-height:1.05}
+.arc .x{font-weight:500;font-size:22px;line-height:1.3;margin-top:6px}
+.tix{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tix div{border-radius:14px;padding:18px 18px;background:rgba(11,14,20,.85);border:3px dashed var(--k)}
+.tix b{display:block;font-family:Bungee;font-size:31px;line-height:1.05}.tix span{font-weight:500;font-size:20px;opacity:.9}
+.foot{position:absolute;left:46px;right:46px;bottom:22px;text-align:center}
+.cta{height:98px;display:flex;align-items:center;justify-content:center;border-radius:24px;background:var(--lime);color:var(--ink);font-family:Bungee;font-size:36px;box-shadow:0 9px 0 var(--lime-lo),0 9px 0 4px var(--ink)}
+.url{margin-top:18px;font-family:Bungee;font-size:40px;color:var(--cyan);text-shadow:3px 3px 0 #ff3d7f}
+.fine{margin-top:4px;font-weight:500;font-size:14px;opacity:.6}
+{% endblock %}
+{% block body %}
+<div class="stars"></div><div class="stripes"></div>
+<div class="content">
+  <div class="top">{{ wordmark(92) }}<div class="chip">{{ d.live }}</div></div>
+  <div class="hero"><h1><span class="fit">{{ d.hook[0] }}</span><span class="fit l2">{{ d.hook[1] }}</span></h1></div>
+  <div class="match fit">{{ d.match }}</div>
+  <div class="pills"><span><b>{{ d.time_label }}</b> {{ d.time }}</span><span>{{ d.network }}</span><span>{{ d.venue }}</span></div>
+  <div class="cards">{% for p in [d.p1,d.p2] %}<div class="tc"><div class="in" style="--c:{{ p.t.color }}"><div class="ab">{{ p.t.abbr }}</div><div class="no">JARVIS CARD #0{{ loop.index }} · {{ p.pos }}</div>
+    <div class="nm"><span class="fit">{{ p.first }}</span><span class="fit">{{ p.last }}</span></div><div class="st">{{ p.stat }}</div><div class="sb">{{ p.sub[0] }}<br>{{ p.sub[1] }}</div></div></div>{% endfor %}</div>
+  <div class="arc"><div style="text-align:center"><div class="k">HIGH SCORE</div><div class="n">{{ d.nugget.frac }}</div></div>
+    <div style="min-width:0;flex:1"><div class="k">📊 {{ b.sheet }}</div><div class="h fit">{{ d.nugget.head }}</div><div class="x">{{ d.nugget.text }}</div></div></div>
+  {% set kc=['#b8eb6b','#7adeff','#ff7a3c','#ff3d7f'] %}
+  <div class="tix">{% for n in d.notes %}<div style="--k:{{ kc[loop.index0] }}"><b class="fit">{{ n.e }} {{ n.h }}</b><span>{{ n.d }}</span></div>{% endfor %}</div>
+</div>
+<div class="foot"><div class="cta">{{ b.cta }}</div><div class="url">{{ b.url }}</div><div class="fine">{{ b.fine }}</div></div>
+{% endblock %}

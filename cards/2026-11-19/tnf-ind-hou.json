@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-19", "sport": "football", "seed": 1119,
+  "live": "THURSDAY NIGHT FOOTBALL · WEEK 11", "hook": ["STROUD VS", "THE COLTS"],
+  "time": "8:15 PM ET", "network": "PRIME VIDEO", "venue": "RELIANT STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Colts", "city": "Indianapolis", "abbr": "IND", "rec": "3-7", "color": "#002C5F", "color2": "#A2AAAD"},
+  "home": {"name": "Texans", "city": "Houston", "abbr": "HOU", "rec": "3-6", "color": "#03202F", "color2": "#A71930"},
+  "p1": {"team": "away", "pos": "RB", "first": "JONATHAN", "last": "TAYLOR", "stat": "739 YDS · 8 TD", "sub": ["177 carries this season", "15+ carries in 8 of 10"]},
+  "p2": {"team": "home", "pos": "QB", "first": "C.J.", "last": "STROUD", "stat": "2,462 YDS · 19 TD", "sub": ["Only 3 INT in 9 games", "5 TD pass game at LAC"]},
+  "nugget": {"hit": 8, "total": 9, "player": "C.J. STROUD", "head": "STROUD: 1+ TD PASS", "text": "A TD pass in 8 of 9 games this season (19 TD total). 150+ pass yards in 9 of 9."},
+  "notes": [
+    {"e": "🔥", "t": "HOT ARM · HOU", "h": "5 TD AT LAC", "d": "384 yds in Week 9 win"},
+    {"e": "🔁", "t": "WEEK 3 RECAP", "h": "IND 19, HOU 17", "d": "Colts took meeting #1"},
+    {"e": "🏠", "t": "HOME WATCH · HOU", "h": "0–4 AT HOME", "d": "Texans seek first home win"},
+    {"e": "🚑", "t": "INJURY · HOU", "h": "AL-SHAAIR IR", "d": "Team tackles leader (groin)"}
+  ]
+}
