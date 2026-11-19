@@ -13,3 +13,7 @@ Daily use:
 ## cards/latest.json (read by the site's /go page)
 After each day's posts are scheduled, the posting task rewrites `cards/latest.json`:
 `{date, updated, cards:[{slot, post_time_et, league, game, away, home, start_et, look, image, video, nugget}]}`, newest card first (PM before AM).
+
+## Daily free-card email
+`python3 templates/v3/build_email.py <unsubscribe_url> [--welcome] --out <dir>` builds the email from cards/latest.json
+(email.html, email.txt, email.json with the subject and the two card images to attach inline as att0/att1).
