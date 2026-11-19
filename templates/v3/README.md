@@ -9,3 +9,7 @@ Daily use:
    Writes .html/.png/.jpg and prints the look used. The look is picked from the date and slot, so the AM and PM cards always differ and all 8 cycle every 4 days.
    Fix any WARNING (shorten text) and re-run. `--theme NAME` forces a look.
 3. `templates/make_short.sh <jpg> <mp4>` for YouTube Shorts.
+
+## cards/latest.json (read by the site's /go page)
+After each day's posts are scheduled, the posting task rewrites `cards/latest.json`:
+`{date, updated, cards:[{slot, post_time_et, league, game, away, home, start_et, look, image, video, nugget}]}`, newest card first (PM before AM).
