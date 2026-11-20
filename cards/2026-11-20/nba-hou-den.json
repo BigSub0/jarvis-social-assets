@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-20", "sport": "basketball", "seed": 5281,
+  "live": "NBA CUP · FRIDAY NIGHT", "hook": ["JOKER'S", "13 FOR 13"],
+  "time": "10:00 PM ET", "network": "PRIME VIDEO", "venue": "BALL ARENA", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Rockets", "city": "Houston", "abbr": "HOU", "rec": "12-4", "color": "#CE1141", "color2": "#C4CED4"},
+  "home": {"name": "Nuggets", "city": "Denver", "abbr": "DEN", "rec": "8-5", "color": "#0E2240", "color2": "#FEC524"},
+  "p1": {"team": "away", "pos": "FORWARD", "first": "KEVIN", "last": "DURANT", "stat": "21.3 PPG", "sub": ["20+ pts in 13 of 16", "Rockets 12-4 this season"]},
+  "p2": {"team": "home", "pos": "GUARD", "first": "JAMAL", "last": "MURRAY", "stat": "25.7 PPG", "sub": ["38 pts at HOU on Nov 10", "20+ pts in 9 of 13"]},
+  "nugget": {"hit": 13, "total": 13, "player": "NIKOLA JOKIC", "head": "JOKIC: 7+ REBOUNDS", "text": "7+ rebounds in all 13 games this season (avg 10.7). Season high: 16 at Houston."},
+  "notes": [
+    {"e": "👑", "t": "TRIPLE THREAT · DEN", "h": "JOKIC 24/11/9", "d": "Season pts/reb/ast averages"},
+    {"e": "🔥", "t": "HOT HAND · DEN", "h": "MURRAY 38", "d": "38 pts in Houston on Nov 10"},
+    {"e": "🚑", "t": "INJURY · HOU", "h": "SENGUN D2D", "d": "Eye; Capela out (ankle)"},
+    {"e": "📅", "t": "REMATCH", "h": "HOU LEADS 1-0", "d": "Both teams played Thursday"}
+  ]
+}

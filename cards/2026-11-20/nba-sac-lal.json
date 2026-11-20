@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-20", "sport": "basketball", "seed": 7719,
+  "live": "NBA CUP · FRIDAY NIGHT", "hook": ["LUKA", "38 A NIGHT"],
+  "time": "10:00 PM ET", "network": "SPECTRUM SN", "venue": "CRYPTO.COM ARENA", "venuePhoto": "assets/venues/crypto-com-arena.jpg", "photoCredit": "Photo: Troutfarm27 · CC BY 4.0 · Wikimedia Commons (cropped, edited)",
+  "away": {"name": "Kings", "city": "Sacramento", "abbr": "SAC", "rec": "1-13", "color": "#5A2D81", "color2": "#63727A"},
+  "home": {"name": "Lakers", "city": "Los Angeles", "abbr": "LAL", "rec": "13-3", "color": "#552583", "color2": "#FDB927"},
+  "p1": {"team": "away", "pos": "GUARD", "first": "DARIUS", "last": "ACUFF JR.", "stat": "26.2 PPG", "sub": ["7.0 APG this season", "36 pts vs PHX Thursday"]},
+  "p2": {"team": "home", "pos": "GUARD", "first": "LUKA", "last": "DONCIC", "stat": "38.1 PPG", "sub": ["7.6 APG this season", "Two 50-point games"]},
+  "nugget": {"hit": 13, "total": 14, "player": "LUKA DONCIC", "head": "LUKA: 28+ POINTS", "text": "28+ points in 13 of 14 games this season (avg 38.1). Season high: 53 vs Portland."},
+  "notes": [
+    {"e": "🔥", "t": "HOT HAND · SAC", "h": "ACUFF 36", "d": "36 pts vs Phoenix Thursday"},
+    {"e": "💪", "t": "GLASS · SAC", "h": "SABONIS 13.2", "d": "12+ boards in 11 of 13 games"},
+    {"e": "🎯", "t": "LAST MEETING · LAL", "h": "LUKA 40 IN SAC", "d": "40 pts at Sacramento Nov 5"},
+    {"e": "🚑", "t": "INJURY · LAL", "h": "REAVES OUT", "d": "Heel; Kings' Simmons out"}
+  ]
+}

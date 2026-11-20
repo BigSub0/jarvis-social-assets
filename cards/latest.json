@@ -1,32 +1,8 @@
 {
- "date": "2026-11-19",
- "updated": "2026-11-19T09:45:00-05:00",
+ "date": "2026-11-20",
+ "updated": "2026-11-20T04:40:26-05:00",
  "cards": [
-  {
-   "slot": "pm",
-   "post_time_et": "2026-11-19T19:00:00-05:00",
-   "league": "NBA",
-   "game": "Knicks at Timberwolves",
-   "away": "NYK",
-   "home": "MIN",
-   "start_et": "2026-11-19T20:00:00-05:00",
-   "look": "hud",
-   "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-19/nba-nyk-min-v3.jpg",
-   "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-19/nba-nyk-min-v3.mp4",
-   "nugget": "Karl-Anthony Towns: 10+ rebounds in 14 of 14 games"
-  },
-  {
-   "slot": "am",
-   "post_time_et": "2026-11-19T07:00:00-05:00",
-   "league": "NFL",
-   "game": "Colts at Texans",
-   "away": "IND",
-   "home": "HOU",
-   "start_et": "2026-11-19T20:15:00-05:00",
-   "look": "stadium",
-   "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-19/tnf-ind-hou.jpg",
-   "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-19/tnf-ind-hou.mp4",
-   "nugget": "C.J. Stroud: a TD pass in 8 of 9 games"
-  }
+  {"slot": "pm", "post_time_et": "2026-11-20T19:00:00-05:00", "league": "NBA", "game": "Kings at Lakers", "away": "SAC", "home": "LAL", "start_et": "2026-11-20T22:00:00-05:00", "look": "mixtape", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-sac-lal.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-sac-lal.mp4", "nugget": "Luka Doncic: 28+ points in 13 of 14 games"},
+  {"slot": "am", "post_time_et": "2026-11-20T07:00:00-05:00", "league": "NBA", "game": "Rockets at Nuggets", "away": "HOU", "home": "DEN", "start_et": "2026-11-20T22:00:00-05:00", "look": "magazine", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-hou-den.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-hou-den.mp4", "nugget": "Nikola Jokic: 7+ rebounds in 13 of 13 games"}
  ]
 }
