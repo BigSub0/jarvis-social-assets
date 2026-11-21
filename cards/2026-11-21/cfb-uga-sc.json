@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-21", "sport": "football", "seed": 7781,
+  "live": "SATURDAY NIGHT FOOTBALL · WEEK 12", "hook": ["STOCKTON", "DEALS"],
+  "time": "7:30 PM ET", "network": "ABC", "venue": "WILLIAMS-BRICE STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Bulldogs", "city": "Georgia", "abbr": "UGA", "rec": "9-1", "color": "#BA0C2F", "color2": "#000000"},
+  "home": {"name": "Gamecocks", "city": "South Carolina", "abbr": "SC", "rec": "6-4", "color": "#73000A", "color2": "#000000"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "GUNNER", "last": "STOCKTON", "stat": "2,109 YDS", "sub": ["21 TD, 4 INT in 2026", "71.4% completions"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "LANORRIS", "last": "SELLERS", "stat": "2,100 YDS", "sub": ["Plus 637 rush yds, 7 TD", "Ankle: expected to play"]},
+  "nugget": {"hit": 8, "total": 10, "player": "GUNNER STOCKTON", "head": "STOCKTON: 150+ PASS YDS", "text": "150+ passing yards in 8 of 10 games this season (avg 210.9)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT STREAK · UGA", "h": "3 STRAIGHT WINS", "d": "Average margin: 27 points"},
+    {"e": "💥", "t": "BIG PLAY · UGA", "h": "TAYLOR 3 TD", "d": "140 yds, 3 TD at Ole Miss"},
+    {"e": "🏆", "t": "STAKES · UGA", "h": "SEC TITLE BID", "d": "A win clinches the SEC title game"},
+    {"e": "🚑", "t": "INJURY · SC", "h": "SELLERS ANKLE", "d": "Missed Arkansas; expected in"}
+  ]
+}

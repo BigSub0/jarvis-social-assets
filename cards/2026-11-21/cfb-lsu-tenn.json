@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-21", "sport": "football", "seed": 5213,
+  "live": "SEC ON ABC · WEEK 12", "hook": ["BISHOP", "RUNS HOT"],
+  "time": "3:30 PM ET", "network": "ABC", "venue": "NEYLAND STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Tigers", "city": "LSU", "abbr": "LSU", "rec": "6-4", "color": "#461D7C", "color2": "#FDD023"},
+  "home": {"name": "Volunteers", "city": "Tennessee", "abbr": "TENN", "rec": "8-2", "color": "#FF8200", "color2": "#4B4B4B"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "SAM", "last": "LEAVITT", "stat": "2,797 YDS", "sub": ["19 TD, 12 INT in 2026", "71.2% completions"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "GEORGE", "last": "MACINTYRE", "stat": "962 YDS", "sub": ["Knee: starter TBA", "Brandon: 9 TD, 1 INT"]},
+  "nugget": {"hit": 6, "total": 10, "player": "DESEAN BISHOP", "head": "BISHOP: 100+ RUSH YDS", "text": "100+ rushing yards in 6 of 10 games this season (avg 116.3)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT STREAK · TENN", "h": "40-0 AFTER HALF", "d": "Second halves, last 2 games"},
+    {"e": "💥", "t": "POWER · TENN", "h": "BISHOP 220", "d": "220 yds, 3 TD vs Auburn"},
+    {"e": "🎯", "t": "PASS RUSH · LSU", "h": "40 SACKS", "d": "Most in nation; Vols have 39"},
+    {"e": "🚑", "t": "INJURY · TENN", "h": "MATTHEWS OUT", "d": "Top WR out for year (knee)"}
+  ]
+}
