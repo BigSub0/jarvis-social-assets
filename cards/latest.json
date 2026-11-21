@@ -1,8 +1,8 @@
 {
- "date": "2026-11-20",
- "updated": "2026-11-20T04:40:26-05:00",
+ "date": "2026-11-21",
+ "updated": "2026-11-21T04:49:40-05:00",
  "cards": [
-  {"slot": "pm", "post_time_et": "2026-11-20T19:00:00-05:00", "league": "NBA", "game": "Kings at Lakers", "away": "SAC", "home": "LAL", "start_et": "2026-11-20T22:00:00-05:00", "look": "mixtape", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-sac-lal.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-sac-lal.mp4", "nugget": "Luka Doncic: 28+ points in 13 of 14 games"},
-  {"slot": "am", "post_time_et": "2026-11-20T07:00:00-05:00", "league": "NBA", "game": "Rockets at Nuggets", "away": "HOU", "home": "DEN", "start_et": "2026-11-20T22:00:00-05:00", "look": "magazine", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-hou-den.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-20/nba-hou-den.mp4", "nugget": "Nikola Jokic: 7+ rebounds in 13 of 13 games"}
+  {"slot": "pm", "post_time_et": "2026-11-21T19:00:00-05:00", "league": "CFB", "game": "Georgia at South Carolina", "away": "UGA", "home": "SC", "start_et": "2026-11-21T19:30:00-05:00", "look": "neon", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-uga-sc.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-uga-sc.mp4", "nugget": "Gunner Stockton: 150+ passing yards in 8 of 10 games"},
+  {"slot": "am", "post_time_et": "2026-11-21T07:00:00-05:00", "league": "CFB", "game": "LSU at Tennessee", "away": "LSU", "home": "TENN", "start_et": "2026-11-21T15:30:00-05:00", "look": "broadcast", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-lsu-tenn.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-lsu-tenn.mp4", "nugget": "DeSean Bishop: 100+ rushing yards in 6 of 10 games"}
  ]
 }
