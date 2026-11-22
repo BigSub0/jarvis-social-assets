@@ -1,8 +1,8 @@
 {
- "date": "2026-11-21",
- "updated": "2026-11-21T04:49:40-05:00",
+ "date": "2026-11-22",
+ "updated": "2026-11-22T04:47:25-05:00",
  "cards": [
-  {"slot": "pm", "post_time_et": "2026-11-21T19:00:00-05:00", "league": "CFB", "game": "Georgia at South Carolina", "away": "UGA", "home": "SC", "start_et": "2026-11-21T19:30:00-05:00", "look": "neon", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-uga-sc.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-uga-sc.mp4", "nugget": "Gunner Stockton: 150+ passing yards in 8 of 10 games"},
-  {"slot": "am", "post_time_et": "2026-11-21T07:00:00-05:00", "league": "CFB", "game": "LSU at Tennessee", "away": "LSU", "home": "TENN", "start_et": "2026-11-21T15:30:00-05:00", "look": "broadcast", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-lsu-tenn.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-21/cfb-lsu-tenn.mp4", "nugget": "DeSean Bishop: 100+ rushing yards in 6 of 10 games"}
+  {"slot": "pm", "post_time_et": "2026-11-22T19:00:00-05:00", "league": "NFL", "game": "Vikings at 49ers", "away": "MIN", "home": "SF", "start_et": "2026-11-22T20:20:00-05:00", "look": "retro", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-min-sf.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-min-sf.mp4", "nugget": "Christian McCaffrey: 60+ scrimmage yards in 9 of 9 games"},
+  {"slot": "am", "post_time_et": "2026-11-22T07:00:00-05:00", "league": "NFL", "game": "Dolphins at Bills", "away": "MIA", "home": "BUF", "start_et": "2026-11-22T13:00:00-05:00", "look": "bold", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-mia-buf.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-mia-buf.mp4", "nugget": "James Cook: 12+ rushing attempts in 9 of 9 games"}
  ]
 }
