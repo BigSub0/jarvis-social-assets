@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-22", "sport": "football", "seed": 8207,
+  "live": "SUNDAY NIGHT FOOTBALL · WEEK 11", "hook": ["CMC", "EVERY WEEK"],
+  "time": "8:20 PM ET", "network": "NBC", "venue": "ESTADIO BANORTE", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Vikings", "city": "Minnesota", "abbr": "MIN", "rec": "7-2", "color": "#4F2683", "color2": "#FFC62F"},
+  "home": {"name": "49ers", "city": "San Francisco", "abbr": "SF", "rec": "8-1", "color": "#AA0000", "color2": "#B3995D"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "KIRK", "last": "COUSINS", "stat": "207 YDS", "sub": ["2 TD in Week 10 win", "First start back in MIN"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "BROCK", "last": "PURDY", "stat": "9.0 YPA", "sub": ["Leads NFL per attempt", "2,369 pass yds"]},
+  "nugget": {"hit": 9, "total": 9, "player": "CHRISTIAN MCCAFFREY", "head": "CMC: 60+ SCRIM YDS", "text": "60+ scrimmage yards in all 9 games this season (avg 105.6)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT · SF", "h": "CMC 223 YDS", "d": "Scrimmage yards at Dallas"},
+    {"e": "🛡️", "t": "DEFENSE · MIN", "h": "37 SACKS", "d": "Most in the NFL this season"},
+    {"e": "🎯", "t": "SCORER · SF", "h": "CMC 13 TD", "d": "10 rush, 3 receiving TDs"},
+    {"e": "🌎", "t": "HISTORY", "h": "SERIES 25-25-1", "d": "All-time, playoffs included"}
+  ]
+}

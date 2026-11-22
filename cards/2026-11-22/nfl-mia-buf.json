@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-22", "sport": "football", "seed": 6122,
+  "live": "NFL SUNDAY · WEEK 11", "hook": ["ALLEN", "ON A ROLL"],
+  "time": "1:00 PM ET", "network": "CBS", "venue": "HIGHMARK STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Dolphins", "city": "Miami", "abbr": "MIA", "rec": "1-8", "color": "#008E97", "color2": "#FC4C02"},
+  "home": {"name": "Bills", "city": "Buffalo", "abbr": "BUF", "rec": "8-1", "color": "#00338D", "color2": "#C60C30"},
+  "p1": {"team": "away", "pos": "RUNNING BACK", "first": "OLLIE", "last": "GORDON II", "stat": "539 RUSH YDS", "sub": ["4 rushing TDs this season", "Leads Miami on the ground"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "JOSH", "last": "ALLEN", "stat": "2,223 YDS", "sub": ["13 pass TD, 11 rush TD", "10+ comp in 9 of 9"]},
+  "nugget": {"hit": 9, "total": 9, "player": "JAMES COOK", "head": "COOK: 12+ CARRIES", "text": "12+ rushing attempts in all 9 games this season (avg 20.8)."},
+  "notes": [
+    {"e": "🔥", "t": "STREAK · BUF", "h": "BILLS W5", "d": "Five straight wins, 8-1 start"},
+    {"e": "🏈", "t": "MILESTONE · BUF", "h": "ALLEN 4 TD AWAY", "d": "From tying Kelly's Bills record"},
+    {"e": "💪", "t": "GROUND · BUF", "h": "COOK 971 YDS", "d": "Rushing yards this season"},
+    {"e": "🚑", "t": "INJURY · BUF", "h": "BENFORD OUT", "d": "Groin; Kincaid doubtful"}
+  ]
+}
