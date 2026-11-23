@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-23", "sport": "basketball", "seed": 7730,
+  "live": "NBA · MONDAY NIGHT", "hook": ["JADEN", "NEVER COLD"],
+  "time": "7:30 PM ET", "network": "PEACOCK", "venue": "TARGET CENTER", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Nets", "city": "Brooklyn", "abbr": "BKN", "rec": "3-12", "color": "#000000", "color2": "#FFFFFF"},
+  "home": {"name": "Timberwolves", "city": "Minnesota", "abbr": "MIN", "rec": "12-5", "color": "#0C2340", "color2": "#78BE20"},
+  "p1": {"team": "away", "pos": "FORWARD", "first": "JULIUS", "last": "RANDLE", "stat": "21.1 PPG", "sub": ["6.0 RPG, 4.7 APG", "17+ pts in last 5"]},
+  "p2": {"team": "home", "pos": "FORWARD", "first": "JADEN", "last": "MCDANIELS", "stat": "17.5 PPG", "sub": ["6.0 RPG this season", "Season-high 25 vs MEM"]},
+  "nugget": {"hit": 17, "total": 17, "player": "JADEN MCDANIELS", "head": "MCDANIELS: 13+ PTS", "text": "13+ points in all 17 games this season (avg 17.5)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT · MIN", "h": "MCDANIELS 25", "d": "Season high vs Memphis"},
+    {"e": "💪", "t": "GLASS · MIN", "h": "47.5 RPG", "d": "2nd in NBA in rebounding"},
+    {"e": "🎯", "t": "SNIPER · BKN", "h": "MPJ 3.2 3PM", "d": "Threes per game this season"},
+    {"e": "🚑", "t": "INJURY · MIN", "h": "EDWARDS OUT", "d": "Knee; DiVincenzo also out"}
+  ]
+}

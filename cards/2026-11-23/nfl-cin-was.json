@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-23", "sport": "football", "seed": 1123,
+  "live": "MONDAY NIGHT FOOTBALL · WEEK 11", "hook": ["CHASE", "ON FIRE"],
+  "time": "8:15 PM ET", "network": "ESPN", "venue": "NORTHWEST STADIUM", "venuePhoto": "assets/venues/northwest-stadium.jpg", "photoCredit": "Photo: All-Pro Reels · CC BY-SA 2.0 · Wikimedia Commons (cropped, edited)",
+  "away": {"name": "Bengals", "city": "Cincinnati", "abbr": "CIN", "rec": "7-2", "color": "#FB4F14", "color2": "#000000"},
+  "home": {"name": "Commanders", "city": "Washington", "abbr": "WAS", "rec": "3-5-1", "color": "#5A1414", "color2": "#FFB612"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "JOE", "last": "BURROW", "stat": "2,795 YDS", "sub": ["27 pass TD, 6 INT", "4+ TD in 5 straight"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "JAYDEN", "last": "DANIELS", "stat": "1,499 YDS", "sub": ["10 pass TD, 280 rush yds", "3 TD in win over NYG"]},
+  "nugget": {"hit": 8, "total": 8, "player": "STEFON DIGGS", "head": "DIGGS: 20+ REC YDS", "text": "20+ receiving yards in all 8 games this season (avg 48.3)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT · CIN", "h": "CHASE 231 YDS", "d": "11 catches vs Pittsburgh"},
+    {"e": "🏆", "t": "STREAK · CIN", "h": "BENGALS W5", "d": "Five straight, AFC North lead"},
+    {"e": "🏈", "t": "MILESTONE · WAS", "h": "DIGGS 80 TD", "d": "30th player ever to 80 TD rec"},
+    {"e": "🏃", "t": "WORKLOAD · CIN", "h": "BROWN 6+ CARRIES", "d": "In 9 of 9 games (avg 12.6)"}
+  ]
+}
