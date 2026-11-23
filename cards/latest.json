@@ -1,8 +1,8 @@
 {
- "date": "2026-11-22",
- "updated": "2026-11-22T04:47:25-05:00",
- "cards": [
-  {"slot": "pm", "post_time_et": "2026-11-22T19:00:00-05:00", "league": "NFL", "game": "Vikings at 49ers", "away": "MIN", "home": "SF", "start_et": "2026-11-22T20:20:00-05:00", "look": "retro", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-min-sf.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-min-sf.mp4", "nugget": "Christian McCaffrey: 60+ scrimmage yards in 9 of 9 games"},
-  {"slot": "am", "post_time_et": "2026-11-22T07:00:00-05:00", "league": "NFL", "game": "Dolphins at Bills", "away": "MIA", "home": "BUF", "start_et": "2026-11-22T13:00:00-05:00", "look": "bold", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-mia-buf.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-22/nfl-mia-buf.mp4", "nugget": "James Cook: 12+ rushing attempts in 9 of 9 games"}
- ]
+  "date": "2026-11-23",
+  "updated": "2026-11-23T04:49:33-05:00",
+  "cards": [
+    {"slot": "pm", "post_time_et": "7:00 PM", "league": "NBA", "game": "Nets at Timberwolves", "away": "BKN", "home": "MIN", "start_et": "2026-11-23T19:30:00-05:00", "look": "hud", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nba-bkn-min.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nba-bkn-min.mp4", "nugget": "Jaden McDaniels: 13+ points in 17 of 17 games"},
+    {"slot": "am", "post_time_et": "7:00 AM", "league": "NFL", "game": "Bengals at Commanders", "away": "CIN", "home": "WAS", "start_et": "2026-11-23T20:15:00-05:00", "look": "stadium", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nfl-cin-was.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nfl-cin-was.mp4", "nugget": "Stefon Diggs: 20+ receiving yards in 8 of 8 games"}
+  ]
 }
