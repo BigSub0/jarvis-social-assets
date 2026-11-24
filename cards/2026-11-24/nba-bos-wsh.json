@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-24",
+ "sport": "basketball",
+ "seed": 8806,
+ "live": "NBA CUP · GROUP PLAY",
+ "hook": [
+  "TATUM",
+  "STAYS HOT"
+ ],
+ "time": "8:00 PM ET",
+ "network": "NBC",
+ "venue": "CAPITAL ONE ARENA",
+ "venuePhoto": "",
+ "photoCredit": "",
+ "away": {
+  "name": "Celtics",
+  "city": "Boston",
+  "abbr": "BOS",
+  "rec": "11-6",
+  "color": "#007A33",
+  "color2": "#BA9653"
+ },
+ "home": {
+  "name": "Wizards",
+  "city": "Washington",
+  "abbr": "WSH",
+  "rec": "7-11",
+  "color": "#002B5C",
+  "color2": "#E31837"
+ },
+ "p1": {
+  "team": "away",
+  "pos": "FORWARD",
+  "first": "JAYSON",
+  "last": "TATUM",
+  "stat": "26.4 PPG",
+  "sub": [
+   "6.7 APG this season",
+   "40-pt game vs BKN"
+  ]
+ },
+ "p2": {
+  "team": "home",
+  "pos": "FORWARD",
+  "first": "ANTHONY",
+  "last": "DAVIS",
+  "stat": "25.1 PPG",
+  "sub": [
+   "9.9 RPG this season",
+   "44 pts at Detroit"
+  ]
+ },
+ "nugget": {
+  "hit": 14,
+  "total": 15,
+  "player": "JAYSON TATUM",
+  "head": "TATUM: 19+ POINTS",
+  "text": "19+ points in 14 of 15 games this season (avg 26.4)."
+ },
+ "notes": [
+  {
+   "e": "🎯",
+   "t": "DIMES · WSH",
+   "h": "TRAE 8.8 APG",
+   "d": "Assists per game this season"
+  },
+  {
+   "e": "🔥",
+   "t": "HOT · WSH",
+   "h": "DAVIS 36",
+   "d": "36 & 11 at Chicago Friday"
+  },
+  {
+   "e": "💪",
+   "t": "GLASS · BOS",
+   "h": "QUETA 7.1 RPG",
+   "d": "Leads Celtics in rebounding"
+  },
+  {
+   "e": "🆚",
+   "t": "SERIES",
+   "h": "1ST OF 4",
+   "d": "First meeting this season"
+  }
+ ]
+}

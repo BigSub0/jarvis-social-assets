@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-24",
+ "sport": "basketball",
+ "seed": 2411,
+ "live": "NBA CUP · GROUP PLAY",
+ "hook": [
+  "THE JOKER",
+  "OWNS GLASS"
+ ],
+ "time": "10:00 PM ET",
+ "network": "NBC",
+ "venue": "BALL ARENA",
+ "venuePhoto": "",
+ "photoCredit": "",
+ "away": {
+  "name": "Mavericks",
+  "city": "Dallas",
+  "abbr": "DAL",
+  "rec": "10-7",
+  "color": "#00538C",
+  "color2": "#B8C4CA"
+ },
+ "home": {
+  "name": "Nuggets",
+  "city": "Denver",
+  "abbr": "DEN",
+  "rec": "10-5",
+  "color": "#0E2240",
+  "color2": "#FEC524"
+ },
+ "p1": {
+  "team": "away",
+  "pos": "FORWARD",
+  "first": "COOPER",
+  "last": "FLAGG",
+  "stat": "24.3 PPG",
+  "sub": [
+   "6.4 APG this season",
+   "43-pt game vs IND"
+  ]
+ },
+ "p2": {
+  "team": "home",
+  "pos": "CENTER",
+  "first": "NIKOLA",
+  "last": "JOKIC",
+  "stat": "25.1 PPG",
+  "sub": [
+   "10.9 RPG, 9.2 APG",
+   "37 & 18 at CHI Sun"
+  ]
+ },
+ "nugget": {
+  "hit": 15,
+  "total": 15,
+  "player": "NIKOLA JOKIC",
+  "head": "JOKIC: 7+ REBOUNDS",
+  "text": "7+ rebounds in all 15 games this season (avg 10.9)."
+ },
+ "notes": [
+  {
+   "e": "🔥",
+   "t": "HOT · DEN",
+   "h": "MURRAY 45",
+   "d": "Dropped 45 at Chicago Sunday"
+  },
+  {
+   "e": "⚡",
+   "t": "SCORER · DAL",
+   "h": "KYRIE 35 X2",
+   "d": "Two 35-point games this year"
+  },
+  {
+   "e": "🆚",
+   "t": "SERIES",
+   "h": "1ST OF 3",
+   "d": "First meeting this season"
+  },
+  {
+   "e": "🚑",
+   "t": "INJURY · DAL",
+   "h": "LIVELY OUT",
+   "d": "P.J. Washington day-to-day"
+  }
+ ]
+}
