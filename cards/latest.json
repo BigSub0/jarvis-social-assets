@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-23",
-  "updated": "2026-11-23T04:49:33-05:00",
+  "date": "2026-11-24",
+  "updated": "2026-11-24T04:42:31-05:00",
   "cards": [
-    {"slot": "pm", "post_time_et": "2026-11-23T19:00:00-05:00", "league": "NBA", "game": "Nets at Timberwolves", "away": "BKN", "home": "MIN", "start_et": "2026-11-23T19:30:00-05:00", "look": "hud", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nba-bkn-min.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nba-bkn-min.mp4", "nugget": "Jaden McDaniels: 13+ points in 17 of 17 games"},
-    {"slot": "am", "post_time_et": "2026-11-23T07:00:00-05:00", "league": "NFL", "game": "Bengals at Commanders", "away": "CIN", "home": "WAS", "start_et": "2026-11-23T20:15:00-05:00", "look": "stadium", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nfl-cin-was.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-23/nfl-cin-was.mp4", "nugget": "Stefon Diggs: 20+ receiving yards in 8 of 8 games"}
+    {"slot": "pm", "post_time_et": "2026-11-24T19:00:00-05:00", "league": "NBA", "game": "Celtics at Wizards", "away": "BOS", "home": "WSH", "start_et": "2026-11-24T20:00:00-05:00", "look": "mixtape", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-bos-wsh.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-bos-wsh.mp4", "nugget": "Jayson Tatum: 19+ points in 14 of 15 games"},
+    {"slot": "am", "post_time_et": "2026-11-24T07:00:00-05:00", "league": "NBA", "game": "Mavericks at Nuggets", "away": "DAL", "home": "DEN", "start_et": "2026-11-24T22:00:00-05:00", "look": "magazine", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-dal-den.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-dal-den.mp4", "nugget": "Nikola Jokic: 7+ rebounds in 15 of 15 games"}
   ]
 }
