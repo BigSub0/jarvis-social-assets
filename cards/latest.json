@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-24",
-  "updated": "2026-11-24T04:42:31-05:00",
+  "date": "2026-11-25",
+  "updated": "2026-11-25T04:48:36-05:00",
   "cards": [
-    {"slot": "pm", "post_time_et": "2026-11-24T19:00:00-05:00", "league": "NBA", "game": "Celtics at Wizards", "away": "BOS", "home": "WSH", "start_et": "2026-11-24T20:00:00-05:00", "look": "mixtape", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-bos-wsh.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-bos-wsh.mp4", "nugget": "Jayson Tatum: 19+ points in 14 of 15 games"},
-    {"slot": "am", "post_time_et": "2026-11-24T07:00:00-05:00", "league": "NBA", "game": "Mavericks at Nuggets", "away": "DAL", "home": "DEN", "start_et": "2026-11-24T22:00:00-05:00", "look": "magazine", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-dal-den.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-24/nba-dal-den.mp4", "nugget": "Nikola Jokic: 7+ rebounds in 15 of 15 games"}
+    {"slot": "pm", "post_time_et": "2026-11-25T19:00:00-05:00", "league": "NBA", "game": "Timberwolves at Thunder", "away": "MIN", "home": "OKC", "start_et": "2026-11-25T19:30:00-05:00", "look": "neon", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nba-min-okc.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nba-min-okc.mp4", "nugget": "Shai Gilgeous-Alexander: 25+ points in 15 of 17 games"},
+    {"slot": "am", "post_time_et": "2026-11-25T07:00:00-05:00", "league": "NFL", "game": "Packers at Rams", "away": "GB", "home": "LAR", "start_et": "2026-11-25T20:00:00-05:00", "look": "broadcast", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nfl-gb-lar.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nfl-gb-lar.mp4", "nugget": "Kyren Williams: 10+ rushing attempts in 10 of 10 games"}
   ]
 }

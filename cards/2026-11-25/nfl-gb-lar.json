@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-25", "sport": "football", "seed": 5127,
+  "live": "NETFLIX · NFL WEEK 12", "hook": ["FEED", "KYREN"],
+  "time": "8:00 PM ET", "network": "NETFLIX", "venue": "SOFI STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Packers", "city": "Green Bay", "abbr": "GB", "rec": "6-4", "color": "#203731", "color2": "#FFB612"},
+  "home": {"name": "Rams", "city": "Los Angeles", "abbr": "LAR", "rec": "6-4", "color": "#003594", "color2": "#FFA300"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "JORDAN", "last": "LOVE", "stat": "2,838 YDS", "sub": ["20 TD, 7 INT this season", "3rd in NFL in pass yds"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "MATTHEW", "last": "STAFFORD", "stat": "2,623 YDS", "sub": ["19 TD, 10 INT this season", "Rams have won 4 straight"]},
+  "nugget": {"hit": 10, "total": 10, "player": "KYREN WILLIAMS", "head": "KYREN: 10+ CARRIES", "text": "10+ rushing attempts in all 10 games this season (avg 13.9)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT · LAR", "h": "4 STRAIGHT WINS", "d": "Beat Arizona 34-6 last time out"},
+    {"e": "🎯", "t": "DEEP · GB", "h": "WATSON 916 YDS", "d": "7 receiving TDs this season"},
+    {"e": "💪", "t": "GROUND · LAR", "h": "KYREN 616 YDS", "d": "6 rushing TDs this season"},
+    {"e": "🚑", "t": "INJURY · GB", "h": "JACOBS QUESTIONABLE", "d": "Finger; Parsons set to return"}
+  ]
+}
