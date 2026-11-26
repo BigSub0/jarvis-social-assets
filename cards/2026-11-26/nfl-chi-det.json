@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-26", "sport": "football", "seed": 1126,
+  "live": "THANKSGIVING · NFL WEEK 12", "hook": ["NFC NORTH", "SHOWDOWN"],
+  "time": "1:00 PM ET", "network": "CBS", "venue": "FORD FIELD", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Bears", "city": "Chicago", "abbr": "CHI", "rec": "8-2", "color": "#0B162A", "color2": "#C83803"},
+  "home": {"name": "Lions", "city": "Detroit", "abbr": "DET", "rec": "8-2", "color": "#0076B6", "color2": "#B0B7BC"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "CALEB", "last": "WILLIAMS", "stat": "1,727 YDS", "sub": ["10 TD, 6 INT this season", "Bears have won 5 straight"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "JARED", "last": "GOFF", "stat": "2,716 YDS", "sub": ["20 TD, 4 INT this season", "107.7 passer rating"]},
+  "nugget": {"hit": 10, "total": 10, "player": "JARED GOFF", "head": "GOFF: 150+ PASS YDS", "text": "150+ passing yards in all 10 games this season (avg 271.6)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT · DET", "h": "6 STRAIGHT WINS", "d": "6-0 at home this season"},
+    {"e": "💪", "t": "GROUND · DET", "h": "GIBBS 1,098 YDS", "d": "13 rushing TDs this season"},
+    {"e": "🎯", "t": "END ZONE · CHI", "h": "SWIFT 10 TDS", "d": "627 rushing yards this season"},
+    {"e": "🚑", "t": "INJURY · CHI", "h": "GORDON OUT", "d": "CB Gordon, S Hicks ruled out"}
+  ]
+}

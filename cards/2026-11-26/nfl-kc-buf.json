@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-26", "sport": "football", "seed": 8820,
+  "live": "THANKSGIVING NIGHT · WEEK 12", "hook": ["MAHOMES", "VS ALLEN"],
+  "time": "8:20 PM ET", "network": "NBC", "venue": "HIGHMARK STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Chiefs", "city": "Kansas City", "abbr": "KC", "rec": "8-2", "color": "#E31837", "color2": "#FFB81C"},
+  "home": {"name": "Bills", "city": "Buffalo", "abbr": "BUF", "rec": "9-1", "color": "#00338D", "color2": "#C60C30"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "PATRICK", "last": "MAHOMES", "stat": "2,709 YDS", "sub": ["22 TD, 4 INT this season", "13 TD, 0 INT since Week 8"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "JOSH", "last": "ALLEN", "stat": "2,527 YDS", "sub": ["14 TD, 9 INT this season", "11 rushing TDs"]},
+  "nugget": {"hit": 9, "total": 10, "player": "JAMES COOK", "head": "COOK: 60+ RUSH YDS", "text": "60+ rushing yards in 9 of 10 games this season (avg 106)."},
+  "notes": [
+    {"e": "🔥", "t": "STREAK · BUF", "h": "COOK 9 STRAIGHT", "d": "Rushing TD in 9 straight games"},
+    {"e": "💥", "t": "PASS RUSH · KC", "h": "KARLAFTIS 7 SACKS", "d": "7 sacks in his last 4 games"},
+    {"e": "🏆", "t": "MILESTONE · KC", "h": "KELCE PASSES GRONK", "d": "3rd-most TDs by a tight end"},
+    {"e": "🚑", "t": "INJURY · KC", "h": "WALKER OUT", "d": "RB misses 3rd straight game"}
+  ]
+}
