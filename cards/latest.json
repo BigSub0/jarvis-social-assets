@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-25",
-  "updated": "2026-11-25T04:48:36-05:00",
+  "date": "2026-11-26",
+  "updated": "2026-11-26T04:49:36-05:00",
   "cards": [
-    {"slot": "pm", "post_time_et": "2026-11-25T19:00:00-05:00", "league": "NBA", "game": "Timberwolves at Thunder", "away": "MIN", "home": "OKC", "start_et": "2026-11-25T19:30:00-05:00", "look": "neon", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nba-min-okc.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nba-min-okc.mp4", "nugget": "Shai Gilgeous-Alexander: 25+ points in 15 of 17 games"},
-    {"slot": "am", "post_time_et": "2026-11-25T07:00:00-05:00", "league": "NFL", "game": "Packers at Rams", "away": "GB", "home": "LAR", "start_et": "2026-11-25T20:00:00-05:00", "look": "broadcast", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nfl-gb-lar.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-25/nfl-gb-lar.mp4", "nugget": "Kyren Williams: 10+ rushing attempts in 10 of 10 games"}
+    {"slot": "pm", "post_time_et": "2026-11-26T19:00:00-05:00", "league": "NFL", "game": "Chiefs at Bills", "away": "KC", "home": "BUF", "start_et": "2026-11-26T20:20:00-05:00", "look": "retro", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-kc-buf.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-kc-buf.mp4", "nugget": "James Cook: 60+ rushing yards in 9 of 10 games"},
+    {"slot": "am", "post_time_et": "2026-11-26T07:00:00-05:00", "league": "NFL", "game": "Bears at Lions", "away": "CHI", "home": "DET", "start_et": "2026-11-26T13:00:00-05:00", "look": "bold", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-chi-det.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-chi-det.mp4", "nugget": "Jared Goff: 150+ passing yards in 10 of 10 games"}
   ]
 }
