@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-26",
-  "updated": "2026-11-26T04:49:36-05:00",
+  "date": "2026-11-27",
+  "updated": "2026-11-27T04:48:44-05:00",
   "cards": [
-    {"slot": "pm", "post_time_et": "2026-11-26T19:00:00-05:00", "league": "NFL", "game": "Chiefs at Bills", "away": "KC", "home": "BUF", "start_et": "2026-11-26T20:20:00-05:00", "look": "retro", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-kc-buf.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-kc-buf.mp4", "nugget": "James Cook: 60+ rushing yards in 9 of 10 games"},
-    {"slot": "am", "post_time_et": "2026-11-26T07:00:00-05:00", "league": "NFL", "game": "Bears at Lions", "away": "CHI", "home": "DET", "start_et": "2026-11-26T13:00:00-05:00", "look": "bold", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-chi-det.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-26/nfl-chi-det.mp4", "nugget": "Jared Goff: 150+ passing yards in 10 of 10 games"}
+    {"slot": "pm", "post_time_et": "2026-11-27T19:00:00-05:00", "league": "NBA", "game": "Lakers at Spurs", "away": "LAL", "home": "SAS", "start_et": "2026-11-27T21:30:00-05:00", "look": "hud", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-27/nba-lal-sas.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-27/nba-lal-sas.mp4", "nugget": "Victor Wembanyama: 2+ blocks in 16 of 18 games"},
+    {"slot": "am", "post_time_et": "2026-11-27T07:00:00-05:00", "league": "NFL", "game": "Broncos at Steelers", "away": "DEN", "home": "PIT", "start_et": "2026-11-27T15:00:00-05:00", "look": "stadium", "image": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-27/nfl-den-pit.jpg", "video": "https://raw.githubusercontent.com/BigSub0/jarvis-social-assets/main/cards/2026-11-27/nfl-den-pit.mp4", "nugget": "Bo Nix: 14+ completions in 10 of 10 games"}
   ]
 }

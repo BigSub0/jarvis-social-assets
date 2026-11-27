@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-27", "sport": "football", "seed": 1127,
+  "live": "BLACK FRIDAY FOOTBALL · WEEK 12", "hook": ["BLACK", "FRIDAY"],
+  "time": "3:00 PM ET", "network": "PRIME VIDEO", "venue": "ACRISURE STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Broncos", "city": "Denver", "abbr": "DEN", "rec": "8-2", "color": "#FB4F14", "color2": "#002244"},
+  "home": {"name": "Steelers", "city": "Pittsburgh", "abbr": "PIT", "rec": "6-4", "color": "#FFB612", "color2": "#101820"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "BO", "last": "NIX", "stat": "1,955 YDS", "sub": ["12 TD, 5 INT this season", "Broncos have won 6 straight"]},
+  "p2": {"team": "home", "pos": "RUNNING BACK", "first": "JAYLEN", "last": "WARREN", "stat": "747 YDS", "sub": ["135 carries, 2 rush TDs", "13.5 carries per game"]},
+  "nugget": {"hit": 10, "total": 10, "player": "BO NIX", "head": "NIX: 14+ COMPLETIONS", "text": "14+ completions in all 10 games this season (avg 19.3)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT · DEN", "h": "6 STRAIGHT WINS", "d": "Broncos 8-2, 3-2 on the road"},
+    {"e": "🏠", "t": "HOME · PIT", "h": "4-0 AT HOME", "d": "But PIT has lost 2 straight"},
+    {"e": "🎯", "t": "WR · PIT", "h": "METCALF 434 YDS", "d": "36 catches, 2 TDs this season"},
+    {"e": "🏈", "t": "QB WATCH · PIT", "h": "RUDOLPH IN", "d": "ESPN: PIT turns to Rudolph"}
+  ]
+}

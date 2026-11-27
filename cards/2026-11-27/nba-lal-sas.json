@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-27", "sport": "basketball", "seed": 2793,
+  "live": "NBA CUP · WEST GROUP C", "hook": ["LUKA", "VS WEMBY"],
+  "time": "9:30 PM ET", "network": "PRIME VIDEO", "venue": "FROST BANK CENTER", "venuePhoto": "assets/venues/frost-bank-center.jpg", "photoCredit": "Photo: Katie Haugland · CC BY 2.0 · Wikimedia Commons (cropped, edited)",
+  "away": {"name": "Lakers", "city": "Los Angeles", "abbr": "LAL", "rec": "15-3", "color": "#552583", "color2": "#FDB927"},
+  "home": {"name": "Spurs", "city": "San Antonio", "abbr": "SAS", "rec": "15-4", "color": "#000000", "color2": "#C4CED4"},
+  "p1": {"team": "away", "pos": "GUARD", "first": "LUKA", "last": "DONCIC", "stat": "36.6 PPG", "sub": ["7.7 APG, 6.6 RPG", "Had 11 straight 30-pt games"]},
+  "p2": {"team": "home", "pos": "CENTER", "first": "VICTOR", "last": "WEMBANYAMA", "stat": "30.7 PPG", "sub": ["12.5 RPG, 3.8 BPG", "44 pts, 16 reb at POR"]},
+  "nugget": {"hit": 16, "total": 18, "player": "VICTOR WEMBANYAMA", "head": "WEMBY: 2+ BLOCKS", "text": "2+ blocks in 16 of 18 games this season (avg 3.8)."},
+  "notes": [
+    {"e": "🏆", "t": "RECORD · LAL", "h": "15-3 START", "d": "Won 9 straight earlier"},
+    {"e": "💥", "t": "BIG GAME · SAS", "h": "WEMBY 50 & 18", "d": "vs Pelicans on Nov 22"},
+    {"e": "🎯", "t": "SCORING · LAL", "h": "LUKA 39 PPG RUN", "d": "39 PPG over first 12 games"},
+    {"e": "🚑", "t": "INJURY · SAS", "h": "FOX (SHIN)", "d": "Out at POR; status TBA"}
+  ]
+}
