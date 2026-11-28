@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-28", "sport": "football", "seed": 5281,
+  "live": "THE GAME · BIG TEN RIVALRY", "hook": ["THE GAME", "SMITH TIME"],
+  "time": "12:00 PM ET", "network": "FOX", "venue": "OHIO STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Wolverines", "city": "Michigan", "abbr": "MICH", "rec": "6-5", "color": "#00274C", "color2": "#FFCB05"},
+  "home": {"name": "Buckeyes", "city": "Ohio State", "abbr": "OSU", "rec": "7-4", "color": "#BA0C2F", "color2": "#A7B1B7"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "BRYCE", "last": "UNDERWOOD", "stat": "1,077 YDS", "sub": ["6 TD, 6 INT this season", "Hamstring; expected in"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "LUKE", "last": "FAHEY", "stat": "1,283 YDS", "sub": ["200+ yds in 4 of 4 starts", "10 TD, 5 INT this season"]},
+  "nugget": {"hit": 10, "total": 11, "player": "JEREMIAH SMITH", "head": "SMITH: 1+ REC TD", "text": "A receiving TD in 10 of 11 games this season (17 TDs, avg 134.7 yds)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT HAND · MICH", "h": "HITER 100+", "d": "100+ rush yds, last 2 games"},
+    {"e": "🏆", "t": "RECORD · OSU", "h": "SMITH 4,040", "d": "Big Ten career rec yards"},
+    {"e": "💪", "t": "POWER · MICH", "h": "DALEY 8 SACKS", "d": "Leads Michigan in sacks"},
+    {"e": "🚑", "t": "INJURY · MICH", "h": "BUCHANAN OUT", "d": "Shoulder; likely done for year"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-28", "sport": "football", "seed": 9134,
+  "live": "IRON BOWL · RIVALRY WEEK", "hook": ["IRON BOWL", "RUSSELL TDS"],
+  "time": "7:30 PM ET", "network": "ABC", "venue": "BRYANT-DENNY STADIUM", "venuePhoto": "", "photoCredit": "",
+  "away": {"name": "Tigers", "city": "Auburn", "abbr": "AUB", "rec": "7-4", "color": "#0B2341", "color2": "#E86100"},
+  "home": {"name": "Crimson Tide", "city": "Alabama", "abbr": "ALA", "rec": "9-2", "color": "#9E1B32", "color2": "#828A8F"},
+  "p1": {"team": "away", "pos": "QUARTERBACK", "first": "BYRUM", "last": "BROWN", "stat": "2,035 YDS", "sub": ["644 rush yds, 9 rush TD", "Probable for Saturday"]},
+  "p2": {"team": "home", "pos": "QUARTERBACK", "first": "KEELON", "last": "RUSSELL", "stat": "2,480 YDS", "sub": ["21 TD, 6 INT this season", "67.3% completions"]},
+  "nugget": {"hit": 10, "total": 10, "player": "KEELON RUSSELL", "head": "RUSSELL: 1+ TOTAL TD", "text": "Threw or ran for a TD in all 10 games he played (26 total TDs)."},
+  "notes": [
+    {"e": "🔥", "t": "HOT STREAK · AUB", "h": "16 SACKS", "d": "During Auburn's 3-game streak"},
+    {"e": "💣", "t": "POWER · ALA", "h": "RUSSELL 365", "d": "Season-high pass yds vs SC"},
+    {"e": "🏃", "t": "HISTORY · AUB", "h": "BROWN 108", "d": "Rush yds at Bryant-Denny '24"},
+    {"e": "🚑", "t": "INJURY · ALA", "h": "RUSSELL BACK", "d": "Ankle sprain; set to return"}
+  ]
+}
